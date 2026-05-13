@@ -1,0 +1,32 @@
+# Zeroclic — Automatización y Productividad
+
+Tu dosis semanal de automatización, herramientas y trucos para trabajar menos y producir más.
+
+baseURL = "https://zeroclic.es"
+languageCode = "es-ES"
+title = "Zeroclic — Automatización y Productividad"
+theme = ""
+
+[languages]
+  [languages.es]
+    weight = 1
+    title = "Zeroclic — Automatización y Productividad"
+    description = "Automatización, herramientas y productividad. Tutoriales, guías y consejos para automatizar tu trabajo y ganar tiempo."
+
+[params]
+  description = "Automatización, herramientas y productividad. Tutoriales, guías y consejos para automatizar tu trabajo y ganar tiempo."
+  author = "Zeroclic"
+  favicon = "/favicon.ico"
+  ogImage = "/images/og-image.png"
+  twitterHandle = "@zeroclic_es"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[services]
+  [services.googleAnalytics]
+    ID = "G-XXXXXXXXXX"
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = true

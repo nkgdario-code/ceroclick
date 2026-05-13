@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zeroclic.es/sitemap.xml
+
+# Política de Crawl
+Crawl-delay: 10
+
+# Bloquear accesos innecesarios
+Disallow: /admin/
+Disallow: /login/
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /

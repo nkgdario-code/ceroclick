@@ -1,0 +1,44 @@
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1>{{ .Title }}</h1>
+    <div class="post-meta">
+      <time>{{ .Date.Format "2 de enero de 2006" }}</time>
+      <span class="reading-time">{{ .ReadingTime }} min de lectura</span>
+    </div>
+    {{ if .Params.tags }}
+    <div class="tags">
+      {{ range .Params.tags }}<span class="tag">#{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+  </header>
+
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+
+  <footer class="post-footer">
+    <h3>¿Te ha resultado útil?</h3>
+    <p>Comparte este artículo para ayudar a otros a automatizar su trabajo.</p>
+    <div class="share-buttons">
+      <a href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}" target="_blank" rel="noopener">🐦 Twitter</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" target="_blank" rel="noopener">💼 LinkedIn</a>
+      <a href="https://www.reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}" target="_blank" rel="noopener">🤖 Reddit</a>
+    </div>
+  </footer>
+</article>
+
+<section class="related-posts">
+  <h3>Artículos relacionados</h3>
+  <div class="posts-grid">
+    {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
+    <article class="post-card">
+      <a href="{{ .Permalink }}">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Summary }}</p>
+      </a>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
