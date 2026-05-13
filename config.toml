@@ -6,7 +6,7 @@ baseURL = "https://ceroclick.es"
 languageCode = "es-ES"
 title = "Ceroclick — Automatización y Productividad"
 defaultContentLanguage = "es"
-theme = ""
+# theme = ""
 
 [languages]
   [languages.es]
