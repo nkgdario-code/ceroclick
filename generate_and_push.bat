@@ -1,12 +1,12 @@
 @echo off
 echo ============================================
-echo  ZER0CLICK DEPLOY SCRIPT
+echo  CEROCLICK DEPLOY SCRIPT
 echo ============================================
 echo.
 
 REM Cambia estos datos
 set GITHUB_USER=TU_USUARIO_GITHUB
-set REPO_NAME=zeroclic
+set REPO_NAME=ceroclick
 set GITHUB_EMAIL=tu@email.com
 
 REM 1. Git init (si no existe)

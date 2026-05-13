@@ -1,45 +1,45 @@
----
+﻿---
 title: "Herramientas recomendadas"
-description: "Nuestra selección de herramientas de automatización, IA y productividad que usamos a diario."
+description: "Nuestra selecciÃ³n de herramientas de automatizaciÃ³n, IA y productividad que usamos a diario."
 ---
 
 # Herramientas recomendadas
 
 Lista de herramientas que recomendamos y usamos. Actualizada regularmente.
 
-## Automatización
+## AutomatizaciÃ³n
 
-| Herramienta | Qué hace | Precio |
+| Herramienta | QuÃ© hace | Precio |
 |---|---|---|
-| [n8n](https://n8n.io) | Automatización open source | Gratis (self-hosted) |
+| [n8n](https://n8n.io) | AutomatizaciÃ³n open source | Gratis (self-hosted) |
 | [Node-RED](https://nodered.org) | Flujos IoT y APIs | Gratis |
-| [Bunifu](https://bunifu.io) | Automatización de UI | Freemium |
+| [Bunifu](https://bunifu.io) | AutomatizaciÃ³n de UI | Freemium |
 
 ## IA
 
-| Herramienta | Qué hace | Precio |
+| Herramienta | QuÃ© hace | Precio |
 |---|---|---|
-| [ChatGPT](https://chat.openai.com) | Asistente de IA conversacional | Gratis / 20€/mes |
-| [Claude](https://claude.ai) | Asistente de IA (Razonamiento) | Gratis / 20€/mes |
-| [Midjourney](https://midjourney.com) | Generación de imágenes con IA | Desde 10$/mes |
+| [ChatGPT](https://chat.openai.com) | Asistente de IA conversacional | Gratis / 20â‚¬/mes |
+| [Claude](https://claude.ai) | Asistente de IA (Razonamiento) | Gratis / 20â‚¬/mes |
+| [Midjourney](https://midjourney.com) | GeneraciÃ³n de imÃ¡genes con IA | Desde 10$/mes |
 
 ## Productividad
 
-| Herramienta | Qué hace | Precio |
+| Herramienta | QuÃ© hace | Precio |
 |---|---|---|
-| [Notion](https://notion.so) | Workspace todo-en-uno | Gratis / 8€/mes |
-| [Obsidian](https://obsidian.md) | Gestión de conocimiento | Gratis |
-| [Bitwarden](https://bitwarden.com) | Gestor de contraseñas | Gratis / 10€/año |
+| [Notion](https://notion.so) | Workspace todo-en-uno | Gratis / 8â‚¬/mes |
+| [Obsidian](https://obsidian.md) | GestiÃ³n de conocimiento | Gratis |
+| [Bitwarden](https://bitwarden.com) | Gestor de contraseÃ±as | Gratis / 10â‚¬/aÃ±o |
 
 ## Self-hosting
 
-| Herramienta | Qué hace | Precio |
+| Herramienta | QuÃ© hace | Precio |
 |---|---|---|
 | [Jellyfin](https://jellyfin.org) | Servidor de medios | Gratis |
 | [Nextcloud](https://nextcloud.com) | Tu propio Google Drive | Gratis |
 | [Gitea](https://gitea.io) | Tu propio GitHub | Gratis |
-| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | Monitorización | Gratis |
+| [Uptime Kuma](https://github.com/louislam/uptime-kuma) | MonitorizaciÃ³n | Gratis |
 
 ---
 
-*¿Echas de menos alguna herramienta? [Dinos](mailto:hola@zeroclic.es) y la añadimos.*
+*Â¿Echas de menos alguna herramienta? [Dinos](mailto:hola@ceroclick.es) y la aÃ±adimos.*

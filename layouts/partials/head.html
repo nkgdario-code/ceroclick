@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ if .IsHome }}Zeroclic — Automatización y Productividad{{ else }}{{ .Title }} | Zeroclic{{ end }}</title>
+  <title>{{ if .IsHome }}Ceroclick — Automatización y Productividad{{ else }}{{ .Title }} | Ceroclick{{ end }}</title>
   <meta name="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}Automatización, herramientas y productividad. Tutoriales, guías y consejos para automatizar tu trabajo y ganar tiempo.{{ end }}">
-  <meta name="author" content="Zeroclic">
+  <meta name="author" content="Ceroclick">
   <link rel="canonical" href="{{ .Permalink }}">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="{{ if .IsHome }}Zeroclic — Automatización y Productividad{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:title" content="{{ if .IsHome }}Ceroclick — Automatización y Productividad{{ else }}{{ .Title }}{{ end }}">
   <meta property="og:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}Automatización, herramientas y productividad para trabajar menos y producir más.{{ end }}">
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:image" content="/images/og-image.png">
-  <meta property="og:site_name" content="Zeroclic">
+  <meta property="og:site_name" content="Ceroclick">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@zeroclic_es">
-  <meta name="twitter:title" content="{{ if .IsHome }}Zeroclic — Automatización y Productividad{{ else }}{{ .Title }}{{ end }}">
+  <meta name="twitter:site" content="@ceroclick_es">
+  <meta name="twitter:title" content="{{ if .IsHome }}Ceroclick — Automatización y Productividad{{ else }}{{ .Title }}{{ end }}">
   <meta name="twitter:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}Automatización, herramientas y productividad para trabajar menos y producir más.{{ end }}">
 
   <!-- Favicon -->
@@ -36,8 +36,8 @@
     "description": "{{ .Summary | plainify }}",
     "datePublished": "{{ .Date.Format "2006-01-02" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-    "author": {"@type": "Person", "name": "Zeroclic"},
-    "publisher": {"@type": "Organization", "name": "Zeroclic"},
+    "author": {"@type": "Person", "name": "Ceroclick"},
+    "publisher": {"@type": "Organization", "name": "Ceroclick"},
     "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ .Permalink }}"}
   }
   </script>
@@ -46,7 +46,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <a href="/" class="logo">ZER0<span class="accent">CLICK</span></a>
+      <a href="/" class="logo">CERO<span class="accent">CLICK</span></a>
       <nav class="nav">
         <a href="/">Inicio</a>
         <a href="/posts/">Artículos</a>

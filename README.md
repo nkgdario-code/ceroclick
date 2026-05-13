@@ -1,8 +1,8 @@
-# 🚀 Zeroclic — Automatización y Productividad
+# 🚀 Ceroclick — Automatización y Productividad
 
 Sitio web estático generado con [Hugo](https://gohugo.io), desplegado en [Vercel](https://vercel.com).
 
-**Live:** https://zeroclic.es
+**Live:** https://ceroclick.es
 
 ---
 
@@ -16,31 +16,31 @@ Sitio web estático generado con [Hugo](https://gohugo.io), desplegado en [Verce
 ### Paso 1: Crear el repositorio en GitHub
 
 1. Ve a [github.com/new](https://github.com/new)
-2. Nombre del repo: `zeroclic`
+2. Nombre del repo: `ceroclick`
 3. Marca **"Add a README file"**
 4. Pulsa **Create repository**
 
 ### Paso 2: Subir los archivos
 
 ```bash
-cd zeroclic
+cd ceroclick
 git init
 git add .
-git commit -m "🚀 Inicio - Zeroclic: Automatización y Productividad"
+git commit -m "🚀 Inicio - Ceroclick: Automatización y Productividad"
 git branch -M main
-git remote add origin https://github.com/TU-USUARIO/zeroclic.git
+git remote add origin https://github.com/TU-USUARIO/ceroclick.git
 git push -u origin main
 ```
 
 ### Paso 3: Desplegar en Vercel
 
 1. Ve a [vercel.com/new](https://vercel.com/new)
-2. Selecciona el repo `zeroclic` de GitHub
+2. Selecciona el repo `ceroclick` de GitHub
 3. Framework preset: **Hugo**
 4. Pulsa **Deploy**
 5. En **Settings → Domains**, añade:
-   - `zeroclic.es`
-   - `www.zeroclic.es`
+   - `ceroclick.es`
+   - `www.ceroclick.es`
 
 ¡Listo! Tu web estará online en ~1 minuto.
 
@@ -49,8 +49,9 @@ git push -u origin main
 ## 📁 Estructura del proyecto
 
 ```
-zeroclic/
+ceroclick/
 ├── config.toml              # Configuración de Hugo
+├── vercel.json              # Config de Vercel (versión Hugo)
 ├── content/
 │   ├── posts/               # Artículos del blog
 │   │   ├── automatizar-tareas-repetitivas-con-bash.md
@@ -126,7 +127,7 @@ Vercel lo despliega automáticamente.
 ## 🎨 Personalizar diseño
 
 - **Colores:** Modifica las variables CSS en `static/css/style.css` (busca `:root`)
-- **Logo/Texto:** Edita el logo en `layouts/partials/header.html`
+- **Logo/Texto:** Edita el logo en `layouts/partials/head.html`
 - **Footer:** Edita `layouts/partials/footer.html`
 - **Favicon:** Reemplaza `static/images/favicon.png`
 - **OG Image:** Crea una imagen de 1200×630px y reemplaza `static/images/og-image.png`
@@ -152,11 +153,6 @@ Añade tu ID en `config.toml`:
   ID = "G-XXXXXXXXXX"
 ```
 
-### Cloudflare (para HTTPS con dominio .es)
-- Añade en Vercel: **Settings → Domains → zeroclic.es**
-- En Cloudflare, desactiva el proxy (DNS only) para `zeroclic.es`
-- Activa SSL en Vercel con certificado Let's Encrypt
-
 ---
 
 ## 🧹 Mantenimiento
@@ -174,4 +170,4 @@ git add . && git commit -m "Update" && git push
 
 ---
 
-*Generado el 13/05/2026 — Zeroclic*
+*Generado el 13/05/2026 — Ceroclick*

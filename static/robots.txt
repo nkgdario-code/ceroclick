@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zeroclic.es/sitemap.xml
+Sitemap: https://ceroclick.es/sitemap.xml
 
 # Política de Crawl
 Crawl-delay: 10
