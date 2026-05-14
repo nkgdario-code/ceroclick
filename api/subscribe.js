@@ -103,7 +103,7 @@ module.exports = async function handler(req, res) {
           const count = ''; // placeholder - podríamos leer el contador
           const adminSubject = `=?utf-8?B?${Buffer.from(`🎉 Nuevo suscriptor: ${email}`).toString('base64')}?=`;
           const adminBody = [
-            `From: ${adminEmail}`,
+            'From: me',
             `To: ${adminEmail}`,
             `Subject: ${adminSubject}`,
             `Content-Type: text/plain; charset=utf-8`,
