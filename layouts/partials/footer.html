@@ -31,3 +31,45 @@
     </div>
   </div>
 </footer>
+
+<script>
+// Newsletter subscription - AJAX submit without page reload
+document.querySelectorAll('.newsletter-form').forEach(form => {
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button');
+    const input = this.querySelector('input[type="email"]');
+    const email = input.value.trim();
+    const originalText = btn.textContent;
+
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        // Replace form with success message
+        const msg = document.createElement('p');
+        msg.className = 'newsletter-success';
+        msg.innerHTML = '🎉 ¡Te has suscrito correctamente!';
+        this.innerHTML = '';
+        this.appendChild(msg);
+      } else {
+        btn.textContent = originalText;
+        btn.disabled = false;
+        alert('Error: ' + (data.error || 'intenta de nuevo'));
+      }
+    } catch (err) {
+      btn.textContent = originalText;
+      btn.disabled = false;
+      alert('Error de conexión. Intenta de nuevo.');
+    }
+  });
+});
+</script>

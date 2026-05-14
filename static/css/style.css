@@ -702,6 +702,13 @@ img {
   margin-top: 12px;
 }
 
+.newsletter-success {
+  color: #22c55e;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
 .footer-bottom {
   text-align: center;
   color: #6b7280;
