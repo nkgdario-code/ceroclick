@@ -28,10 +28,23 @@
   </footer>
 </article>
 
+<section class="newsletter-inline">
+  <div class="newsletter-card newsletter-card--compact">
+    <h3>📩 ¿Te gusta este contenido?</h3>
+    <p>Recibe cada semana un truco de productividad como este directamente en tu email.</p>
+    <form class="newsletter-form" action="/api/subscribe" method="POST">
+      <input type="email" name="email" placeholder="tu@email.com" required>
+      <button type="submit">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+{{ $related := where (where .Site.RegularPages "Section" "posts") "Permalink" "!=" .Permalink }}
+{{ if gt (len $related) 0 }}
 <section class="related-posts">
   <h3>Artículos relacionados</h3>
   <div class="posts-grid">
-    {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
+    {{ range first 3 $related }}
     <article class="post-card">
       <a href="{{ .Permalink }}">
         <h3>{{ .Title }}</h3>
@@ -41,4 +54,5 @@
     {{ end }}
   </div>
 </section>
+{{ end }}
 {{ end }}

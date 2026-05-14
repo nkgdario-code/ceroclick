@@ -18,11 +18,26 @@
     </article>
     {{ end }}
   </div>
+  <div class="featured-footer">
+    <a href="/posts/" class="btn-secondary">Ver todos los artículos →</a>
+  </div>
+</section>
+
+<section class="newsletter-cta">
+  <div class="newsletter-card">
+    <h2>🧠 1 truco de productividad cada semana</h2>
+    <p>Cada viernes recibirás en tu email un consejo práctico, un script útil o una herramienta que te ahorrará horas. Directo al grano, sin relleno.</p>
+    <form class="newsletter-form" action="/api/subscribe" method="POST">
+      <input type="email" name="email" placeholder="tu@email.com" required>
+      <button type="submit">Quiero automatizar más →</button>
+    </form>
+    <p class="newsletter-note">Sin spam. Cancelas cuando quieras. Un email a la semana.</p>
+  </div>
 </section>
 
 <section class="cta">
-  <h2>¿Quieres automatizar más y trabajar menos?</h2>
-  <p>Suscríbete y recibe cada semana un truco nuevo de productividad en tu bandeja de entrada.</p>
-  <a href="/posts/" class="btn-secondary">Ver todos los artículos →</a>
+  <h2>¿Empezamos?</h2>
+  <p>No necesitas ser ingeniero para automatizar. Solo curiosidad y ganas de recuperar tu tiempo.</p>
+  <a href="/posts/" class="btn-primary">Leer el primer artículo →</a>
 </section>
 {{ end }}
