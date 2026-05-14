@@ -1,38 +1,38 @@
 ---
 title: "5 plantillas de Notion que te ahorran 5 horas a la semana"
-description: "Descubre 5 plantillas de Notion listas para usar que te ayudarán a organizar tu trabajo, proyectos y vida personal. Incluyen descarga gratuita."
+description: "Descubre 5 plantillas de Notion listas para usar que te ayudar�n a organizar tu trabajo, proyectos y vida personal. Incluyen descarga gratuita."
 date: 2026-05-17
 draft: false
-tags: ["notion", "productividad", "plantillas", "organización", "gestión de proyectos", "trabajo"]
+tags: ["notion", "productividad", "plantillas", "organizaci�n", "gesti�n de proyectos", "trabajo"]
 ---
 
 # 5 plantillas de Notion que te ahorran 5 horas a la semana
 
-Notion es mucho más que una app de notas. Con las plantillas adecuadas, puedes convertirlo en tu **centro de operaciones personal**: gestión de proyectos, hábitos, finanzas, notas de reuniones...
+Notion es mucho m�s que una app de notas. Con las plantillas adecuadas, puedes convertirlo en tu **centro de operaciones personal**: gesti�n de proyectos, h�bitos, finanzas, notas de reuniones...
 
-Aquí tienes 5 plantillas que uso a diario y que me ahorran literalmente **5 horas cada semana**.
+Aqu� tienes 5 plantillas que uso a diario y que me ahorran literalmente **5 horas cada semana**.
 
 ---
 
 ## 1. Dashboard personal (tu centro de mando)
 
-Un dashboard es una página principal desde la que accedes a **todo lo que necesitas**.
+Un dashboard es una p�gina principal desde la que accedes a **todo lo que necesitas**.
 
 ### Incluye:
 - Vista de tareas pendientes (con filtros por prioridad)
 - Calendario semanal con eventos importantes
 - Lista de proyectos activos con barra de progreso
-- Accesos rápidos a herramientas que usas a diario
-- Estado de tus hábitos diarios
+- Accesos r�pidos a herramientas que usas a diario
+- Estado de tus h�bitos diarios
 
-### Cómo crearla:
-1. Crea una nueva página en Notion
-2. Añade una **vista de base de datos** filtrada por "pendiente"
-3. Añade un **calendario** de la misma base de datos
+### C�mo crearla:
+1. Crea una nueva p�gina en Notion
+2. A�ade una **vista de base de datos** filtrada por "pendiente"
+3. A�ade un **calendario** de la misma base de datos
 4. Usa **callouts** para accesos directos
 5. Crea bloques **synced blocks** para reutilizar contenido
 
-> 💡 **Truco:** Usa `/synced block` para que los cambios en una página se reflejen automáticamente en todas las demás donde lo hayas insertado.
+> ?? **Truco:** Usa `/synced block` para que los cambios en una p�gina se reflejen autom�ticamente en todas las dem�s donde lo hayas insertado.
 
 ---
 
@@ -42,13 +42,13 @@ Perfecto para gestionar trabajos freelance, proyectos personales o tareas del eq
 
 ### Estructura:
 ```
-📥 Inbox → 📋 En progreso → 🔍 En revisión → ✅ Hecho
+?? Inbox ? ?? En progreso ? ?? En revisi�n ? ? Hecho
 ```
 
 ### Propiedades de cada tarjeta:
 - **Nombre del proyecto**
 - **Prioridad** (alta / media / baja)
-- **Fecha límite**
+- **Fecha l�mite**
 - **Responsable**
 - **Etiquetas** (cliente, tipo de trabajo, herramienta)
 - **Archivos adjuntos**
@@ -56,7 +56,7 @@ Perfecto para gestionar trabajos freelance, proyectos personales o tareas del eq
 ### Vistas alternativas:
 - **Tabla**: para ver todos los datos a la vez
 - **Calendario**: para ver plazos
-- **Galería**: para proyectos visuales
+- **Galer�a**: para proyectos visuales
 
 ---
 
@@ -64,55 +64,55 @@ Perfecto para gestionar trabajos freelance, proyectos personales o tareas del eq
 
 Olvida las notas dispersas en Google Docs, emails y mensajes sueltos.
 
-### Plantilla de cada reunión:
+### Plantilla de cada reuni�n:
 - **Fecha y hora**
 - **Participantes**
 - **Agenda** (temas a tratar)
-- **Notas** (en tiempo real durante la reunión)
-- **Decisiones tomadas** (lo más importante)
+- **Notas** (en tiempo real durante la reuni�n)
+- **Decisiones tomadas** (lo m�s importante)
 - **Acciones pendientes** con responsable y fecha
 - **Archivos relacionados**
 
 ### Truco avanzado:
-Usa una **base de datos relacional** donde cada reunión esté vinculada a un proyecto. Así puedes ver todas las notas de un proyecto en un solo lugar.
+Usa una **base de datos relacional** donde cada reuni�n est� vinculada a un proyecto. As� puedes ver todas las notas de un proyecto en un solo lugar.
 
 ---
 
-## 4. Tracker de hábitos
+## 4. Tracker de h�bitos
 
 Simple pero tremendamente efectivo. Crea una base de datos con:
 
-- **Nombre del hábito** (ej: ejercicio, lectura, meditación)
+- **Nombre del h�bito** (ej: ejercicio, lectura, meditaci�n)
 - **Frecuencia** (diario, 3x/semana, etc.)
-- **Checkbox** para cada día
-- **Estadísticas** con fórmulas de Notion
+- **Checkbox** para cada d�a
+- **Estad�sticas** con f�rmulas de Notion
 
-### Fórmulas útiles:
+### F�rmulas �tiles:
 ```
-Prop: Completado hoy → Checkbox
-Prop: Racha → Fórmula que cuenta días consecutivos marcados
+Prop: Completado hoy ? Checkbox
+Prop: Racha ? F�rmula que cuenta d�as consecutivos marcados
 ```
 
 ---
 
-## 5. Gestión financiera personal
+## 5. Gesti�n financiera personal
 
 No necesitas una app de finanzas complicada. Una simple base de datos en Notion basta:
 
 - **Fecha**
-- **Concepto** (café, suscripción, sueldo...)
-- **Categoría** (comida, ocio, facturas, ahorro)
+- **Concepto** (caf�, suscripci�n, sueldo...)
+- **Categor�a** (comida, ocio, facturas, ahorro)
 - **Importe** (positivo = ingreso, negativo = gasto)
-- **Método de pago** (tarjeta, efectivo, bizum)
+- **M�todo de pago** (tarjeta, efectivo, bizum)
 
 ### Vistas recomendadas:
 - **Tabla filtrada** por mes
-- **Resumen** con fórmulas: total ingresos, total gastos, balance
-- **Gráfico** (usa embed de Google Sheets o Notion Charts)
+- **Resumen** con f�rmulas: total ingresos, total gastos, balance
+- **Gr�fico** (usa embed de Google Sheets o Notion Charts)
 
 ---
 
-## Cómo implementar todo esto
+## C�mo implementar todo esto
 
 No tienes que crear todo de cero. En la web hay cientos de **templates gratuitos** de Notion que puedes duplicar directamente:
 
@@ -120,8 +120,8 @@ No tienes que crear todo de cero. En la web hay cientos de **templates gratuitos
 - [Notion Market](https://notionmarket.com)
 - Reddit: r/NotionTemplates
 
-**Mi consejo:** empieza con el **dashboard personal**. Es el que más impacto tiene en tu día a día. Una vez lo tengas funcionando, añade las demás plantillas una a una.
+**Mi consejo:** empieza con el **dashboard personal**. Es el que m�s impacto tiene en tu d�a a d�a. Una vez lo tengas funcionando, a�ade las dem�s plantillas una a una.
 
 ---
 
-*¿Quieres que te diseñe un template de Notion personalizado para tu homelab?* Dime qué necesitas y lo creo.
+*�Quieres que te dise�e un template de Notion personalizado para tu homelab?* Dime qu� necesitas y lo creo.

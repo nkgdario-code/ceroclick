@@ -1,0 +1,24 @@
+{
+  "name": "ceroclick",
+  "version": "1.0.0",
+  "description": "Sitio web estático generado con [Hugo](https://gohugo.io), desplegado en [Vercel](https://vercel.com).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkgdario-code/ceroclick.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nkgdario-code/ceroclick/issues"
+  },
+  "homepage": "https://github.com/nkgdario-code/ceroclick#readme",
+  "dependencies": {
+    "iconv-lite": "^0.7.2"
+  }
+}

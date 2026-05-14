@@ -1,48 +1,48 @@
 ---
 title: "Automatiza tu homelab: 10 tareas que puedes dejar que tu servidor haga solo"
-description: "Si tienes un servidor en casa (o estás pensando en montar uno), estas 10 automatizaciones te van a cambiar la vida. Backups, limpieza, monitorización y más."
+description: "Si tienes un servidor en casa (o est�s pensando en montar uno), estas 10 automatizaciones te van a cambiar la vida. Backups, limpieza, monitorizaci�n y m�s."
 date: 2026-05-18
 draft: false
-tags: ["homelab", "servidor", "automatización", "self-hosting", "scripts", "Docker"]
+tags: ["homelab", "servidor", "automatizaci�n", "self-hosting", "scripts", "Docker"]
 ---
 
 # Automatiza tu homelab: 10 tareas que tu servidor puede hacer solo
 
 Tener un homelab mola. Mantenerlo actualizado, hacer backups, limpiar logs, monitorizar que todo funciona... ya no mola tanto. Menos cuando puedes **automatizar el 80% de esas tareas** y olvidarte.
 
-Aquí van 10 automatizaciones que tengo funcionando en mi servidor y que puedes copiar directamente.
+Aqu� van 10 automatizaciones que tengo funcionando en mi servidor y que puedes copiar directamente.
 
 ---
 
-## 1. Backups automáticos con BorgBackup
+## 1. Backups autom�ticos con BorgBackup
 
-Borg es la herramienta de backup más eficiente que existe. Comprime y **deduplica** los datos, así solo ocupa una fracción del espacio original.
+Borg es la herramienta de backup m�s eficiente que existe. Comprime y **deduplica** los datos, as� solo ocupa una fracci�n del espacio original.
 
 ### Script:
 ```bash
 #!/bin/bash
-# Backup automático de contenedores y datos importantes
+# Backup autom�tico de contenedores y datos importantes
 borg create --stats --compression lz4 \
   /mnt/backups::$(date +%Y-%m-%d_%H-%M) \
   /home/usuario/datos \
   /var/lib/docker/volumes
 
-# Limpiar backups de más de 30 días
+# Limpiar backups de m�s de 30 d�as
 borg prune /mnt/backups --keep-daily=7 --keep-weekly=4 --keep-monthly=6
 ```
 
-### Programación con cron:
+### Programaci�n con cron:
 ```
 0 2 * * * /home/usuario/scripts/backup.sh
 ```
 
-Tu servidor hará un backup **cada noche a las 2 de la madrugada** y borrará los que tengan más de 30 días. Sin que toques nada.
+Tu servidor har� un backup **cada noche a las 2 de la madrugada** y borrar� los que tengan m�s de 30 d�as. Sin que toques nada.
 
 ---
 
-## 2. Actualización automática de contenedores Docker
+## 2. Actualizaci�n autom�tica de contenedores Docker
 
-¿Tienes Docker en tu servidor? [Watchtower](https://containrrr.dev/watchtower/) se encarga de actualizar automáticamente todos tus contenedores cuando salen nuevas versiones.
+�Tienes Docker en tu servidor? [Watchtower](https://containrrr.dev/watchtower/) se encarga de actualizar autom�ticamente todos tus contenedores cuando salen nuevas versiones.
 
 ```bash
 docker run -d \
@@ -53,13 +53,13 @@ docker run -d \
   --schedule "0 0 4 * * *"
 ```
 
-**Una vez al día a las 4 de la mañana**, Watchtower revisa si hay actualizaciones de tus imágenes Docker, las descarga y reinicia los contenedores. Así siempre tienes todo actualizado sin esfuerzo.
+**Una vez al d�a a las 4 de la ma�ana**, Watchtower revisa si hay actualizaciones de tus im�genes Docker, las descarga y reinicia los contenedores. As� siempre tienes todo actualizado sin esfuerzo.
 
 ---
 
-## 3. Monitorización con alertas por Telegram
+## 3. Monitorizaci�n con alertas por Telegram
 
-Montar un sistema de monitorización no tiene que ser complicado. Con un script simple puedes vigilar que tus servicios estén online y recibir una alerta si algo falla.
+Montar un sistema de monitorizaci�n no tiene que ser complicado. Con un script simple puedes vigilar que tus servicios est�n online y recibir una alerta si algo falla.
 
 ```bash
 #!/bin/bash
@@ -71,45 +71,45 @@ for servicio in "${SERVICIOS[@]}"; do
   STATUS=$(curl -o /dev/null -s -w "%{http_code}" "$servicio")
   if [ "$STATUS" != "200" ]; then
     curl -s "https://api.telegram.org/bot$BOT_TOKEN/sendMessage" \
-      -d "chat_id=$CHAT_ID&text=⚠️ $servicio está CAÍDO (HTTP $STATUS)" > /dev/null
+      -d "chat_id=$CHAT_ID&text=?? $servicio est� CA�DO (HTTP $STATUS)" > /dev/null
   fi
 done
 ```
 
-Programa esto cada 5 minutos en cron y sabrás al instante si algo se cae.
+Programa esto cada 5 minutos en cron y sabr�s al instante si algo se cae.
 
 ---
 
-## 4. Limpieza automática de logs y archivos temporales
+## 4. Limpieza autom�tica de logs y archivos temporales
 
 Con el tiempo, los logs y archivos temporales llenan tu disco. Esto lo limpia todo de golpe:
 
 ```bash
 #!/bin/bash
-# Limpiar logs de más de 30 días
+# Limpiar logs de m�s de 30 d�as
 find /var/log -name "*.log" -mtime +30 -delete
-# Limpiar cachés de apt
+# Limpiar cach�s de apt
 apt-get clean
 # Limpiar archivos temporales
 find /tmp -type f -atime +7 -delete
-# Limpiar Docker (imágenes, contenedores parados, volúmenes sin usar)
+# Limpiar Docker (im�genes, contenedores parados, vol�menes sin usar)
 docker system prune -af --volumes
 ```
 
-Programa esto **cada semana** y tu servidor se mantendrá ligero.
+Programa esto **cada semana** y tu servidor se mantendr� ligero.
 
 ---
 
-## 5. Renombrar series y películas automáticamente con Sonarr/Radarr
+## 5. Renombrar series y pel�culas autom�ticamente con Sonarr/Radarr
 
 Si usas Plex o Jellyfin, [Sonarr](https://sonarr.tv/) y [Radarr](https://radarr.video/) son imprescindibles:
 
-- **Sonarr**: busca y descarga automáticamente tus series favoritas
-- **Radarr**: lo mismo para películas
-- Ambos renombran y organizan los archivos automáticamente
+- **Sonarr**: busca y descarga autom�ticamente tus series favoritas
+- **Radarr**: lo mismo para pel�culas
+- Ambos renombran y organizan los archivos autom�ticamente
 - Se integran con Plex/Jellyfin, qBittorrent y Transmission
 
-Una vez configurados, **nunca más tienes que buscar un episodio manualmente**.
+Una vez configurados, **nunca m�s tienes que buscar un episodio manualmente**.
 
 ---
 
@@ -117,7 +117,7 @@ Una vez configurados, **nunca más tienes que buscar un episodio manualmente**.
 
 ```bash
 #!/bin/bash
-# Actualización automática de paquetes (sin reiniciar)
+# Actualizaci�n autom�tica de paquetes (sin reiniciar)
 apt-get update && apt-get upgrade -y
 # Limpiar paquetes obsoletos
 apt-get autoremove -y
@@ -125,11 +125,11 @@ apt-get autoclean
 ```
 
 ```
-# Programar para los domingos a las 5 de la mañana
+# Programar para los domingos a las 5 de la ma�ana
 0 5 * * 0 /home/usuario/scripts/update.sh
 ```
 
-> ⚠️ **Cuidado:** para servidores de producción, es mejor que los reinicios sean **manuales**. Para un homelab, esto funciona perfectamente.
+> ?? **Cuidado:** para servidores de producci�n, es mejor que los reinicios sean **manuales**. Para un homelab, esto funciona perfectamente.
 
 ---
 
@@ -143,18 +143,18 @@ FECHA=$(date +%Y-%m-%d)
 pg_dump -U usuario nombre_db | gzip > /mnt/backups/db-$FEZA.sql.gz
 
 # MySQL (alternativa)
-# mysqldump -u usuario -pcontraseña nombre_db | gzip > /mnt/backups/db-$FECHA.sql.gz
+# mysqldump -u usuario -pcontrase�a nombre_db | gzip > /mnt/backups/db-$FECHA.sql.gz
 
 echo "Backup de base de datos creado: db-$FECHA.sql.gz"
 ```
 
-Programa esto **cada día** después de tu backup principal.
+Programa esto **cada d�a** despu�s de tu backup principal.
 
 ---
 
-## 8. Sincronización con la nube
+## 8. Sincronizaci�n con la nube
 
-Si quieres tener una copia en la nube además de tu almacenamiento local:
+Si quieres tener una copia en la nube adem�s de tu almacenamiento local:
 
 ```bash
 #!/bin/bash
@@ -166,23 +166,23 @@ rclone sync /mnt/backups gdrive:/backups --progress
 # rclone sync /mnt/backups dropbox:/backups
 ```
 
-Instala [rclone](https://rclone.org/), configura tu cuenta una vez, y después solo programa el sync.
+Instala [rclone](https://rclone.org/), configura tu cuenta una vez, y despu�s solo programa el sync.
 
 ---
 
 ## 9. Generar un informe semanal de tu servidor
 
-¿Quieres saber cómo está tu servidor sin tener que conectarte? Este script genera un informe y te lo envía:
+�Quieres saber c�mo est� tu servidor sin tener que conectarte? Este script genera un informe y te lo env�a:
 
 ```bash
 #!/bin/bash
 INFORME="Informe del servidor - $(date +%Y-%m-%d)
 
-📊 Disco: $(df -h / | tail -1 | awk '{print $5}') usado
-🧠 RAM: $(free -h | grep Mem | awk '{print $3"/"$2}')
-🔄 Carga: $(uptime | awk -F'load average:' '{print $2}')
-🌡️ Temperatura CPU: $(sensors 2>/dev/null | grep 'Core 0' | awk '{print $3}' || echo 'N/A')
-📦 Actualizaciones pendientes: $(apt list --upgradable 2>/dev/null | grep -c upgradable)
+?? Disco: $(df -h / | tail -1 | awk '{print $5}') usado
+?? RAM: $(free -h | grep Mem | awk '{print $3"/"$2}')
+?? Carga: $(uptime | awk -F'load average:' '{print $2}')
+??? Temperatura CPU: $(sensors 2>/dev/null | grep 'Core 0' | awk '{print $3}' || echo 'N/A')
+?? Actualizaciones pendientes: $(apt list --upgradable 2>/dev/null | grep -c upgradable)
 "
 
 echo "$INFORME" | mail -s "Informe semanal del servidor" tu@email.com
@@ -190,36 +190,36 @@ echo "$INFORME" | mail -s "Informe semanal del servidor" tu@email.com
 
 ---
 
-## 10. Apagado automático por inactividad
+## 10. Apagado autom�tico por inactividad
 
-Si tu servidor no se usa por la noche, ¿por qué tenerlo encendido?
+Si tu servidor no se usa por la noche, �por qu� tenerlo encendido?
 
 ```bash
-# Apagar a las 3 de la mañana si nadie está conectado por SSH
+# Apagar a las 3 de la ma�ana si nadie est� conectado por SSH
 0 3 * * * who | grep -q "." || /sbin/shutdown -h now
 ```
 
-O si quieres algo más inteligente, usa [Wake-on-LAN](https://www.howtogeek.com/221873/how-to-wake-on-lan/) para encenderlo remotamente cuando lo necesites.
+O si quieres algo m�s inteligente, usa [Wake-on-LAN](https://www.howtogeek.com/221873/how-to-wake-on-lan/) para encenderlo remotamente cuando lo necesites.
 
 ---
 
 ## Resumen
 
-| Automatización | Herramienta | Frecuencia |
+| Automatizaci�n | Herramienta | Frecuencia |
 |---|---|---|
 | Backups | BorgBackup + cron | Diario |
 | Actualizar Docker | Watchtower | Diario |
 | Monitorizar servicios | Script + Telegram | Cada 5 min |
 | Limpiar logs | Script + cron | Semanal |
-| Series/películas | Sonarr + Radarr | Continuo |
+| Series/pel�culas | Sonarr + Radarr | Continuo |
 | Actualizar sistema | apt + cron | Semanal |
 | Backup de BBDD | pg_dump/mysqldump | Diario |
 | Sincronizar nube | rclone | Diario |
 | Informe semanal | Script + email | Semanal |
-| Ahorro energía | Cron + shutdown | Diario |
+| Ahorro energ�a | Cron + shutdown | Diario |
 
-**Configura estas 10 cosas y tu homelab se mantendrá solo.** Solo tendrás que preocuparte de disfrutarlo. 🎉
+**Configura estas 10 cosas y tu homelab se mantendr� solo.** Solo tendr�s que preocuparte de disfrutarlo. ??
 
 ---
 
-*¿Tienes un homelab? ¿Qué automatizaciones ya tienes montadas? Cuéntamelo en los comentarios.*
+*�Tienes un homelab? �Qu� automatizaciones ya tienes montadas? Cu�ntamelo en los comentarios.*
