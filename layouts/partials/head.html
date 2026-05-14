@@ -10,19 +10,56 @@
 <meta property="og:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}Automatización, herramientas y productividad para trabajar menos y producir más.{{ end }}">
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="/images/og-image.png">
+<meta property="og:image" content="https://ceroclick.es/images/og-image.png">
 <meta property="og:site_name" content="Ceroclick">
+<meta property="og:locale" content="es_ES">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@ceroclick_es">
 <meta name="twitter:title" content="{{ if .IsHome }}Ceroclick — Automatización y Productividad{{ else }}{{ .Title }}{{ end }}">
 <meta name="twitter:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}Automatización, herramientas y productividad para trabajar menos y producir más.{{ end }}">
+<meta name="twitter:image" content="https://ceroclick.es/images/og-image.png">
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="/images/favicon.png">
 
+<link rel="alternate" type="application/rss+xml" title="Ceroclick RSS" href="/index.xml">
+
 <link rel="stylesheet" href="/css/style.css">
+
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ceroclick",
+  "url": "https://ceroclick.es",
+  "logo": "https://ceroclick.es/images/og-image.png",
+  "description": "Automatización, herramientas y productividad. Tutoriales, guías y consejos para automatizar tu trabajo y ganar tiempo.",
+  "sameAs": [
+    "https://twitter.com/ceroclick_es",
+    "https://github.com/ceroclick"
+  ]
+}
+</script>
+{{ end }}
+
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Ceroclick",
+  "url": "https://ceroclick.es",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://ceroclick.es/search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{ end }}
 
 {{ if not .IsHome }}
 <script type="application/ld+json">
@@ -34,8 +71,9 @@
   "datePublished": "{{ .Date.Format "2006-01-02" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
   "author": {"@type": "Person", "name": "Ceroclick"},
-  "publisher": {"@type": "Organization", "name": "Ceroclick"},
-  "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ .Permalink }}"}
+  "publisher": {"@type": "Organization", "name": "Ceroclick", "logo": {"@type": "ImageObject", "url": "https://ceroclick.es/images/og-image.png"}},
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ .Permalink }}"},
+  "image": "https://ceroclick.es/images/og-image.png"
 }
 </script>
 {{ end }}

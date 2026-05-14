@@ -1,18 +1,17 @@
 # Ceroclick — Automatización y Productividad
-
 # Tu dosis semanal de automatización, herramientas y trucos para trabajar menos y producir más.
 
 baseURL = "https://ceroclick.es"
 languageCode = "es-ES"
 title = "Ceroclick — Automatización y Productividad"
 defaultContentLanguage = "es"
-# theme = ""
 
 [languages]
   [languages.es]
     weight = 1
     title = "Ceroclick — Automatización y Productividad"
-    description = "Automatización, herramientas y productividad. Tutoriales, guías y consejos para automatizar tu trabajo y ganar tiempo."
+    [languages.es.params]
+      description = "Automatización, herramientas y productividad. Tutoriales, guías y consejos para automatizar tu trabajo y ganar tiempo."
 
 [params]
   description = "Automatización, herramientas y productividad. Tutoriales, guías y consejos para automatizar tu trabajo y ganar tiempo."

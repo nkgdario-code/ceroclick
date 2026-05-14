@@ -1,7 +1,23 @@
 {{ define "main" }}
 <div class="error-page">
-  <h1>404 — Página no encontrada</h1>
-  <p>Lo siento, la página que buscas no existe o ha sido movida.</p>
-  <a href="/" class="btn-primary">Volver al inicio</a>
+  <h1>404</h1>
+  <p class="error-sub">Página no encontrada</p>
+  <p>Lo siento, la página que buscas no existe o ha sido movida. Mientras tanto, prueba con estos artículos:</p>
+  
+  <div class="posts-grid">
+    {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
+    <article class="post-card">
+      <a href="{{ .Permalink }}">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Summary }}</p>
+      </a>
+    </article>
+    {{ end }}
+  </div>
+
+  <div class="error-actions">
+    <a href="/" class="btn-primary">Volver al inicio</a>
+    <a href="/posts/" class="btn-secondary">Ver todos los artículos</a>
+  </div>
 </div>
 {{ end }}

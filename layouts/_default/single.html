@@ -1,4 +1,12 @@
 {{ define "main" }}
+<nav class="breadcrumbs" aria-label="Migas de pan">
+  <a href="/">Inicio</a>
+  <span class="separator">›</span>
+  <a href="/posts/">Artículos</a>
+  <span class="separator">›</span>
+  <span class="current">{{ .Title }}</span>
+</nav>
+
 <article class="post-single">
   <header class="post-header">
     <h1>{{ .Title }}</h1>
@@ -39,12 +47,13 @@
   </div>
 </section>
 
-{{ $related := where (where .Site.RegularPages "Section" "posts") "Permalink" "!=" .Permalink }}
-{{ if gt (len $related) 0 }}
+{{ $allPosts := where (where .Site.RegularPages "Section" "posts") "Permalink" "!=" .Permalink }}
+{{ $totalPosts := len $allPosts }}
+{{ if gt $totalPosts 0 }}
 <section class="related-posts">
   <h3>Artículos relacionados</h3>
   <div class="posts-grid">
-    {{ range first 3 $related }}
+    {{ range first 3 $allPosts }}
     <article class="post-card">
       <a href="{{ .Permalink }}">
         <h3>{{ .Title }}</h3>
