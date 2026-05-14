@@ -19,12 +19,12 @@ Bienvenido a **Jellyfin**: tu servidor de medios personal, gratuito y autoconten
 Jellyfin es un servidor multimedia **open source** que organiza tu m�sica, pel�culas y series. Es el sustituto libre de Plex, y funciona en cualquier ordenador, incluso un Raspberry Pi.
 
 ### Caracter�sticas clave:
-- ? **100% gratuito**, sin funciones de pago escondidas
-- ? **Sin anuncios**, nunca
-- ? **Tus datos son tuyos** � nada se sube a la nube
-- ? **Apps oficiales** para m�vil, TV, navegador y tablet
-- ? **Transcodificaci�n** � escucha tu m�sica desde cualquier conexi�n
-- ? **M�ltiples usuarios** � cada persona con su perfil y sus listas
+-  **100% gratuito**, sin funciones de pago escondidas
+-  **Sin anuncios**, nunca
+-  **Tus datos son tuyos** � nada se sube a la nube
+-  **Apps oficiales** para m�vil, TV, navegador y tablet
+-  **Transcodificaci�n** � escucha tu m�sica desde cualquier conexi�n
+-  **M�ltiples usuarios** � cada persona con su perfil y sus listas
 
 ---
 
@@ -63,7 +63,7 @@ Ahora accede a `http://tu-servidor:8096` y sigue el asistente de configuraci�n
 
 ### 1. A�ade tu biblioteca de m�sica
 
-1. Ve a **Dashboard ? Libraries ? Add Library**
+1. Ve a **Dashboard � Libraries � Add Library**
 2. Selecciona **Music** como tipo
 3. A�ade la carpeta donde tienes tu m�sica (`/music`)
 4. Jellyfin escanear� y organizar� autom�ticamente por artista, �lbum y g�nero
@@ -124,12 +124,12 @@ rclone copy gdrive:/Music /ruta/a/jellyfin/music/
 ### Formatos soportados
 | Formato | �Soportado? |
 |---------|-------------|
-| MP3 | ? |
-| FLAC | ? |
-| AAC | ? |
-| OGG | ? |
-| WAV | ? |
-| ALAC | ? |
+| MP3 |  |
+| FLAC |  |
+| AAC |  |
+| OGG |  |
+| WAV |  |
+| ALAC |  |
 
 **Jellyfin tambi�n transcodifica** si tu dispositivo no soporta el formato original.
 
@@ -152,10 +152,10 @@ Con Tailzone, desde fuera de casa simplemente abres la app de Jellyfin y conecta
 | Caracter�stica | Jellyfin | Plex | Spotify |
 |---|---|---|---|
 | **Precio** | Gratis | Gratis (con limitaciones) | 10�/mes |
-| **Sin anuncios** | ? | ? (versi�n gratis) | ? |
-| **Sin l�mite de canciones** | ? | ? | Solo con suscripci�n |
-| **Tus datos privados** | ? | Parcial | ? |
-| **Funciona offline** | ? (descarga) | ? | Solo con premium |
+| **Sin anuncios** |  | L (versi�n gratis) | L |
+| **Sin l�mite de canciones** |  |  | Solo con suscripci�n |
+| **Tus datos privados** |  | Parcial | L |
+| **Funciona offline** |  (descarga) |  | Solo con premium |
 | **Sin internet necesitado** | Solo para subir la biblioteca una vez | Solo para subir | Siempre |
 
 ---
@@ -174,4 +174,4 @@ Con Tailzone, desde fuera de casa simplemente abres la app de Jellyfin y conecta
 
 ---
 
-*�Tienes una colecci�n de m�sica que quieres migrar? �Necesitas ayuda con la configuraci�n de Jellyfin?* Cu�ntamelo y lo montamos juntos. ??
+*�Tienes una colecci�n de m�sica que quieres migrar? �Necesitas ayuda con la configuraci�n de Jellyfin?* Cu�ntamelo y lo montamos juntos. �

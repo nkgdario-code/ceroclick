@@ -31,7 +31,7 @@ docker run -d --name uptime-kuma \
   louislam/uptime-kuma:1
 ```
 
-**Puntuaci�n:** ????? � Si solo puedes instalar UNA herramienta, que sea esta.
+**Puntuaci�n:** PPPPP � Si solo puedes instalar UNA herramienta, que sea esta.
 
 ---
 
@@ -39,7 +39,7 @@ docker run -d --name uptime-kuma \
 
 **Qu� hace:** Gestor de contrase�as compatible con Bitwarden, autocontenido.
 
-**Puntuaci�n:** ????? � Esencial para la seguridad.
+**Puntuaci�n:** PPPPP � Esencial para la seguridad.
 
 *(Consulta nuestra gu�a completa de instalaci�n en otro art�culo de esta web.)*
 
@@ -65,7 +65,7 @@ docker run -d --name portainer \
   portainer/portainer-ce:latest
 ```
 
-**Puntuaci�n:** ???? � Imprescindible cuando tienes m�s de 5 contenedores.
+**Puntuaci�n:** PPPP � Imprescindible cuando tienes m�s de 5 contenedores.
 
 ---
 
@@ -89,7 +89,7 @@ docker run -d --name jellyfin \
   jellyfin/jellyfin:latest
 ```
 
-**Puntuaci�n:** ????? � La mejor alternativa gratuita a Plex.
+**Puntuaci�n:** PPPPP � La mejor alternativa gratuita a Plex.
 
 ---
 
@@ -102,7 +102,7 @@ docker run -d --name jellyfin \
 - Puedes a�adir c�digo JavaScript/Python cuando lo necesitas
 - Self-hosted, tus datos no salen de tu servidor
 
-**Puntuaci�n:** ????? � El cerebro de tu homelab.
+**Puntuaci�n:** PPPPP � El cerebro de tu homelab.
 
 ---
 
@@ -130,7 +130,7 @@ docker run -d --name grafana \
   grafana/grafana-oss
 ```
 
-**Puntuaci�n:** ???? � Imprescindible si te gusta tenerlo todo bajo control.
+**Puntuaci�n:** PPPP � Imprescindible si te gusta tenerlo todo bajo control.
 
 ---
 
@@ -152,7 +152,7 @@ docker run -d --name nextcloud \
   nextcloud:latest
 ```
 
-**Puntuaci�n:** ???? � Para quien quiera control total sobre sus archivos.
+**Puntuaci�n:** PPPP � Para quien quiera control total sobre sus archivos.
 
 ---
 
@@ -171,7 +171,7 @@ docker run -d --name watchtower \
   --cleanup --schedule "0 0 4 * * *"
 ```
 
-**Puntuaci�n:** ???? � Inst�lalo y olv�date de actualizaciones.
+**Puntuaci�n:** PPPP � Inst�lalo y olv�date de actualizaciones.
 
 ---
 
@@ -193,7 +193,7 @@ docker run -d --name navidrome \
   deluanloudon/navidrome:latest
 ```
 
-**Puntuaci�n:** ???? � M�s ligero que Jellyfin si solo escuchas m�sica.
+**Puntuaci�n:** PPPP � M�s ligero que Jellyfin si solo escuchas m�sica.
 
 ---
 
@@ -215,7 +215,7 @@ docker run -d --name duplicati \
   linuxserver/duplicati
 ```
 
-**Puntuaci�n:** ???? � Los backups son lo �NICO que no puedes negociar.
+**Puntuaci�n:** PPPP � Los backups son lo �NICO que no puedes negociar.
 
 ---
 
@@ -223,30 +223,30 @@ docker run -d --name duplicati \
 
 | Herramienta | Para qu� | Prioridad |
 |---|---|---|
-| Uptime Kuma | Monitorizaci�n | ?? Alta |
-| Vaultwarden | Contrase�as | ?? Alta |
-| Portainer | Gesti�n Docker | ?? Media-alta |
-| Jellyfin | Pelis y m�sica | ?? Media-alta |
-| n8n | Automatizaci�n | ?? Media-alta |
-| Grafana+Prometheus | M�tricas | ?? Media |
-| Nextcloud | Archivos | ?? Media |
-| Watchtower | Auto-actualizar | ?? Baja (pero �til) |
-| Navidrome | M�sica | ?? Baja |
-| Duplicati | Backups cifrados | ?? Alta |
+| Uptime Kuma | Monitorizaci�n | 4 Alta |
+| Vaultwarden | Contrase�as | 4 Alta |
+| Portainer | Gesti�n Docker | � Media-alta |
+| Jellyfin | Pelis y m�sica | � Media-alta |
+| n8n | Automatizaci�n | � Media-alta |
+| Grafana+Prometheus | M�tricas | � Media |
+| Nextcloud | Archivos | � Media |
+| Watchtower | Auto-actualizar | � Baja (pero �til) |
+| Navidrome | M�sica | � Baja |
+| Duplicati | Backups cifrados | 4 Alta |
 
 ---
 
 ## Orden de instalaci�n recomendado
 
-1. **Uptime Kuma** ? Vigila que todo funcione
-2. **Vaultwarden** ? Asegura tus contrase�as
-3. **Duplicati** ? Protege tus datos
-4. **Watchtower** ? Mant�n todo actualizado
-5. **Portainer** ? Gestiona tu infraestructura
-6. **n8n** ? Automatiza tu vida
-7. **Jellyfin o Navidrome** ? Entretenimiento
-8. **Grafana + Prometheus** ? M�tricas avanzadas
-9. **Nextcloud** ? Si necesitas sincronizaci�n de archivos
+1. **Uptime Kuma** � Vigila que todo funcione
+2. **Vaultwarden** � Asegura tus contrase�as
+3. **Duplicati** � Protege tus datos
+4. **Watchtower** � Mant�n todo actualizado
+5. **Portainer** � Gestiona tu infraestructura
+6. **n8n** � Automatiza tu vida
+7. **Jellyfin o Navidrome** � Entretenimiento
+8. **Grafana + Prometheus** � M�tricas avanzadas
+9. **Nextcloud** � Si necesitas sincronizaci�n de archivos
 
 ---
 

@@ -89,12 +89,12 @@ echo "Informe descargado: informe-$FECHA.pdf"
 
 ## �Qu� automatizar primero?
 
-- ? Renombrar archivos en masa
-- ? Mover documentos de una carpeta a otra
-- ? Hacer copias de seguridad
-- ? Descargar archivos de internet
-- ? Limpiar archivos temporales
-- ? Enviar notificaciones cuando algo termina
+-  Renombrar archivos en masa
+-  Mover documentos de una carpeta a otra
+-  Hacer copias de seguridad
+-  Descargar archivos de internet
+-  Limpiar archivos temporales
+-  Enviar notificaciones cuando algo termina
 
 La clave es: **si lo haces m�s de 3 veces, merece la pena automatizarlo.**
 

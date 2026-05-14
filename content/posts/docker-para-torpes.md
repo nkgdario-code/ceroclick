@@ -33,7 +33,7 @@ Instalar un programa era un suplicio:
 - "Instala esta librer�a"
 - "�Cu�l versi�n?"
 - "La de hace 3 a�os"
-- ??
+- &
 
 ### Con Docker
 ```bash
@@ -119,7 +119,7 @@ Y una carpeta `mi-web` con un archivo `index.html`:
 <!DOCTYPE html>
 <html>
 <head><title>Mi Docker</title></head>
-<body><h1>�Hola desde Docker! ??</h1></body>
+<body><h1>�Hola desde Docker! 3</h1></body>
 </html>
 ```
 
@@ -137,12 +137,12 @@ Abre `http://localhost:8080` en tu navegador. **Ya tienes una web servida con Do
 
 Con Docker puedes instalar **pr�cticamente cualquier servicio**:
 
-- ?? **Nextcloud** � tu propio Google Drive
-- ?? **Mailu** � tu propio servidor de email
-- ?? **Grafana** � monitorizaci�n avanzada
-- ?? **Jellyfin** � tu propio Netflix personal
-- ?? **Rocket.Chat** � tu propio Slack
-- ?? **Vaultwarden** � tu propio gestor de contrase�as (Bitwarden)
+- � **Nextcloud** � tu propio Google Drive
+- � **Mailu** � tu propio servidor de email
+- � **Grafana** � monitorizaci�n avanzada
+- � **Jellyfin** � tu propio Netflix personal
+- � **Rocket.Chat** � tu propio Slack
+-  **Vaultwarden** � tu propio gestor de contrase�as (Bitwarden)
 
 Todo con un simple `docker-compose up -d`.
 

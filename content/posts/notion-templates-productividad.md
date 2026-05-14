@@ -32,7 +32,7 @@ Un dashboard es una p�gina principal desde la que accedes a **todo lo que nece
 4. Usa **callouts** para accesos directos
 5. Crea bloques **synced blocks** para reutilizar contenido
 
-> ?? **Truco:** Usa `/synced block` para que los cambios en una p�gina se reflejen autom�ticamente en todas las dem�s donde lo hayas insertado.
+> � **Truco:** Usa `/synced block` para que los cambios en una p�gina se reflejen autom�ticamente en todas las dem�s donde lo hayas insertado.
 
 ---
 
@@ -42,7 +42,7 @@ Perfecto para gestionar trabajos freelance, proyectos personales o tareas del eq
 
 ### Estructura:
 ```
-?? Inbox ? ?? En progreso ? ?? En revisi�n ? ? Hecho
+� Inbox � � En progreso �  En revisi�n �  Hecho
 ```
 
 ### Propiedades de cada tarjeta:
@@ -89,8 +89,8 @@ Simple pero tremendamente efectivo. Crea una base de datos con:
 
 ### F�rmulas �tiles:
 ```
-Prop: Completado hoy ? Checkbox
-Prop: Racha ? F�rmula que cuenta d�as consecutivos marcados
+Prop: Completado hoy � Checkbox
+Prop: Racha � F�rmula que cuenta d�as consecutivos marcados
 ```
 
 ---

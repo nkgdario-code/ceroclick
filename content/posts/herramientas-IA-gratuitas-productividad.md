@@ -14,7 +14,7 @@ Aqu� tienes mis 15 favoritas, organizadas por categor�a.
 
 ---
 
-## ??? Escritura y contenido
+## � Escritura y contenido
 
 ### 1. ChatGPT (versi�n gratuita)
 **Qu� hace:** Chatbot conversacional que redacta, resume, traduce, programa y m�s.
@@ -38,7 +38,7 @@ Aqu� tienes mis 15 favoritas, organizadas por categor�a.
 
 ---
 
-## ?? C�digo y desarrollo
+## � C�digo y desarrollo
 
 ### 5. GitHub Copilot (versi�n gratuita)
 **Qu� hace:** Autocompleta c�digo en tu editor.
@@ -62,7 +62,7 @@ Aqu� tienes mis 15 favoritas, organizadas por categor�a.
 
 ---
 
-## ?? Imagen y dise�o
+## � Imagen y dise�o
 
 ### 9. Microsoft Copilot Image Creator
 **Qu� hace:** Genera im�genes a partir de descripciones de texto.
@@ -81,7 +81,7 @@ Aqu� tienes mis 15 favoritas, organizadas por categor�a.
 
 ---
 
-## ?? Investigaci�n y an�lisis
+## � Investigaci�n y an�lisis
 
 ### 12. Perplexity AI
 **Qu� hace:** Motor de b�squeda con IA que da respuestas citadas con fuentes.
@@ -100,7 +100,7 @@ Aqu� tienes mis 15 favoritas, organizadas por categor�a.
 
 ---
 
-## ?? Automatizaci�n y flujos
+## ' Automatizaci�n y flujos
 
 ### 15. n8n (self-hosted)
 **Qu� hace:** Automatizaci�n de flujos de trabajo (como Zapier, pero open source).

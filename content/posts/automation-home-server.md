@@ -71,7 +71,7 @@ for servicio in "${SERVICIOS[@]}"; do
   STATUS=$(curl -o /dev/null -s -w "%{http_code}" "$servicio")
   if [ "$STATUS" != "200" ]; then
     curl -s "https://api.telegram.org/bot$BOT_TOKEN/sendMessage" \
-      -d "chat_id=$CHAT_ID&text=?? $servicio est� CA�DO (HTTP $STATUS)" > /dev/null
+      -d "chat_id=$CHAT_ID&text=� $servicio est� CA�DO (HTTP $STATUS)" > /dev/null
   fi
 done
 ```
@@ -129,7 +129,7 @@ apt-get autoclean
 0 5 * * 0 /home/usuario/scripts/update.sh
 ```
 
-> ?? **Cuidado:** para servidores de producci�n, es mejor que los reinicios sean **manuales**. Para un homelab, esto funciona perfectamente.
+> � **Cuidado:** para servidores de producci�n, es mejor que los reinicios sean **manuales**. Para un homelab, esto funciona perfectamente.
 
 ---
 
@@ -178,11 +178,11 @@ Instala [rclone](https://rclone.org/), configura tu cuenta una vez, y despu�s 
 #!/bin/bash
 INFORME="Informe del servidor - $(date +%Y-%m-%d)
 
-?? Disco: $(df -h / | tail -1 | awk '{print $5}') usado
-?? RAM: $(free -h | grep Mem | awk '{print $3"/"$2}')
-?? Carga: $(uptime | awk -F'load average:' '{print $2}')
-??? Temperatura CPU: $(sensors 2>/dev/null | grep 'Core 0' | awk '{print $3}' || echo 'N/A')
-?? Actualizaciones pendientes: $(apt list --upgradable 2>/dev/null | grep -c upgradable)
+� Disco: $(df -h / | tail -1 | awk '{print $5}') usado
+� RAM: $(free -h | grep Mem | awk '{print $3"/"$2}')
+ Carga: $(uptime | awk -F'load average:' '{print $2}')
+! Temperatura CPU: $(sensors 2>/dev/null | grep 'Core 0' | awk '{print $3}' || echo 'N/A')
+� Actualizaciones pendientes: $(apt list --upgradable 2>/dev/null | grep -c upgradable)
 "
 
 echo "$INFORME" | mail -s "Informe semanal del servidor" tu@email.com
@@ -218,7 +218,7 @@ O si quieres algo m�s inteligente, usa [Wake-on-LAN](https://www.howtogeek.com
 | Informe semanal | Script + email | Semanal |
 | Ahorro energ�a | Cron + shutdown | Diario |
 
-**Configura estas 10 cosas y tu homelab se mantendr� solo.** Solo tendr�s que preocuparte de disfrutarlo. ??
+**Configura estas 10 cosas y tu homelab se mantendr� solo.** Solo tendr�s que preocuparte de disfrutarlo. �
 
 ---
 

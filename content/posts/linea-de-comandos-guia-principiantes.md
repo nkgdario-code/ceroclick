@@ -23,7 +23,7 @@ Parece anticuado, pero sigue siendo **la forma m�s r�pida y potente** de con
 | Sistema | C�mo abrirla |
 |---------|-------------|
 | **Windows** | Busca "Terminal" o "PowerShell" en el men� inicio |
-| **Mac** | Aplicaciones ? Utilidades ? Terminal |
+| **Mac** | Aplicaciones � Utilidades � Terminal |
 | **Linux** | Ctrl + Alt + T (en la mayor�a de distribuciones) |
 
 ---
@@ -120,7 +120,7 @@ Pulsa **flecha arriba** para ver los �ltimos comandos que has usado. Tambi�n
 2. **Automatizaci�n**: Puedes guardar secuencias de comandos en archivos (scripts) y ejecutarlos con un solo comando
 3. **Servidores remotos**: cuando quieras administrar un servidor (tu homelab, un VPS), la terminal es la **�nica** forma de hacerlo
 4. **Reproducibilidad**: puedes copiar y pegar exactamente los mismos pasos en cualquier ordenador
-5. **Parece que sabes mucho** (y de verdad lo eres) ??
+5. **Parece que sabes mucho** (y de verdad lo eres) 
 
 ---
 

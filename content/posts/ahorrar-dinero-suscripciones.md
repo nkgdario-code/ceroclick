@@ -46,7 +46,7 @@ def detectar_suscripciones(transacciones, patron_recurrente):
 
 def enviar_resumen(suscripciones, email_destino):
     msg = MIMEText(formato_html(suscripciones))
-    msg['Subject'] = '?? Resumen de suscripciones semanal'
+    msg['Subject'] = '� Resumen de suscripciones semanal'
     msg['From'] = 'tuscripciones@tudominio.com'
     msg['To'] = email_destino
     # Enviar...
@@ -85,7 +85,7 @@ for trial in "${TRIALS[@]}"; do
   DIAS_RESTANTES=$(( (FECHA_FIN - FECHA_ACTUAL) / 86400 ))
 
   if [ $DIAS_RESTANTES -le 3 ]; then
-    echo "?? '$nombre' expira en $DIAS_RESTANTES d�as!"
+    echo "� '$nombre' expira en $DIAS_RESTANTES d�as!"
     # Aqu� puedes enviar una notificaci�n por Telegram
   fi
 done
@@ -108,7 +108,7 @@ La herramienta m�s potente que puedes montar es un **dashboard de suscripcione
 ### Automatizaci�n:
 - Cada mes, un script comprueba tu banco y **actualiza autom�ticamente** los importes
 - Si detecta un cargo nuevo recurrente, **te avisa** y lo a�ades a la lista
-- Si un servicio lleva 3 meses sin uso ? **se�al roja** para cancelar
+- Si un servicio lleva 3 meses sin uso � **se�al roja** para cancelar
 
 ---
 
@@ -126,8 +126,8 @@ La herramienta m�s potente que puedes montar es un **dashboard de suscripcione
 ## Resultado realista
 
 Si automatizas el control de suscripciones:
-- **Mes 1:** Detectas 3-5 suscripciones que puedes cancelar ? ahorras 20-40�/mes
-- **Mes 3:** Optimizas tarifas (cambias a planes anuales, encuentras alternativas gratis) ? ahorras 40-80�/mes
+- **Mes 1:** Detectas 3-5 suscripciones que puedes cancelar � ahorras 20-40�/mes
+- **Mes 3:** Optimizas tarifas (cambias a planes anuales, encuentras alternativas gratis) � ahorras 40-80�/mes
 - **A�o 1:** Ahorras entre **500 y 1.000�** sin esfuerzo, ya que el sistema trabaja solo
 
 ---

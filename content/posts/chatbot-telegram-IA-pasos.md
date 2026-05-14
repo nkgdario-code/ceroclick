@@ -15,11 +15,11 @@ tags: ["bot", "telegram", "IA", "inteligencia artificial", "tutorial", "automati
 ## �Qu� vamos a construir?
 
 Un bot de Telegram que:
-- ? Responde preguntas usando IA (ChatGPT)
-- ? Genera im�genes a partir de texto
-- ? Traduce mensajes
-- ? Resumen art�culos o textos largos
-- ? Puedes ampliar con cualquier funci�n que se te ocurra
+-  Responde preguntas usando IA (ChatGPT)
+-  Genera im�genes a partir de texto
+-  Traduce mensajes
+-  Resumen art�culos o textos largos
+-  Puedes ampliar con cualquier funci�n que se te ocurra
 
 ---
 
@@ -37,10 +37,10 @@ Un bot de Telegram que:
 
 1. Ve a [platform.openai.com](https://platform.openai.com)
 2. Crea una cuenta (o inicia sesi�n)
-3. Ve a **API Keys ? Create new secret key**
+3. Ve a **API Keys � Create new secret key**
 4. **Copia la clave** � la necesitar�s
 
-> ?? La capa gratuita incluye **$5 de cr�dito** para los primeros 3 meses. M�s que suficiente para probar.
+> � La capa gratuita incluye **$5 de cr�dito** para los primeros 3 meses. M�s que suficiente para probar.
 
 ---
 
@@ -76,12 +76,12 @@ Accede a `http://tu-servidor:5678` y sigue el asistente.
    - Chat ID: `{{ $json.chat.id }}`
    - Text: `{{ $json.choices[0].message.content }}`
 
-4. **Activa el workflow** ??
+4. **Activa el workflow** �
 
 ### Diagrama del flujo:
 
 ```
-[Mensaje en Telegram] ? [OpenAI GPT] ? [Respuesta en Telegram]
+[Mensaje en Telegram] � [OpenAI GPT] � [Respuesta en Telegram]
 ```
 
 **Eso es todo.** Ahora puedes hablar con tu bot desde Telegram.
@@ -94,8 +94,8 @@ Accede a `http://tu-servidor:5678` y sigue el asistente.
 
 1. A�ade un **nodo IF** despu�s del trigger
 2. Condici�n: si el mensaje empieza con `/imagen`
-3. Si es true ? nodo **OpenAI DALL-E** (genera la imagen)
-4. Si es false ? flujo normal de texto
+3. Si es true � nodo **OpenAI DALL-E** (genera la imagen)
+4. Si es false � flujo normal de texto
 
 ### Traducci�n autom�tica
 
@@ -157,4 +157,4 @@ Si ya tienes un servidor o VPS, despliega n8n ah� con Docker y olv�date. Si 
 
 ---
 
-*�Quieres que te monte el workflow completo de n8n exportado para importar directamente? Tan solo tieneso ped�rmelo.* ??
+*�Quieres que te monte el workflow completo de n8n exportado para importar directamente? Tan solo tieneso ped�rmelo.* 

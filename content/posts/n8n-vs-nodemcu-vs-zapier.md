@@ -108,18 +108,18 @@ Para equipos o personas que quieren **conectar aplicaciones SaaS** sin complicar
 | **Precio (cloud)** | Desde 20�/mes | Gratuito | Desde 20$/mes |
 | **Facilidad de uso** | Media | Media-alta | Muy alta |
 | **Integraciones** | 200+ | Miles (comunidad) | 6.000+ |
-| **Self-hosting** | ? S� | ? S� | ? No |
+| **Self-hosting** |  S� |  S� | L No |
 | **C�digo necesario** | Opcional (JS/Python) | Opcional | No |
-| **IoT / Hardware** | Limitado | ? Excelente | Imposible |
+| **IoT / Hardware** | Limitado | P Excelente | Imposible |
 | **Privacidad de datos** | Control total | Control total | Tus datos en Zapier |
 | **Escalabilidad** | Alta | Alta | Alta (pero cara) |
 
 ## Mi recomendaci�n
 
-- **Perfil t�cnico + servidor propio** ? **n8n**. Es el mejor equilibrio entre potencia y control.
-- **Quieres cacharrear con IoT o Raspberry Pi** ? **Node-RED**. No hay nada comparable.
-- **Perfil no t�cnico + sin servidor** ? **Zapier**. Pagar�s m�s, pero funcionar� desde el minuto 1.
-- **Yo en tu lugar** ? instalar�a n8n en tu servidor y lo complementar�a con Node-RED si tienes hardware.
+- **Perfil t�cnico + servidor propio** � **n8n**. Es el mejor equilibrio entre potencia y control.
+- **Quieres cacharrear con IoT o Raspberry Pi** � **Node-RED**. No hay nada comparable.
+- **Perfil no t�cnico + sin servidor** � **Zapier**. Pagar�s m�s, pero funcionar� desde el minuto 1.
+- **Yo en tu lugar** � instalar�a n8n en tu servidor y lo complementar�a con Node-RED si tienes hardware.
 
 ---
 
