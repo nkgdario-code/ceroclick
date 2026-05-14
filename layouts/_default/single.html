@@ -27,10 +27,10 @@
 
   <footer class="post-footer">
     <h3>¿Te ha resultado útil?</h3>
-    <p>Comparte este artículo para ayudar a otros a automatizar su trabajo.</p>
+    <p>Comparte este artículo y ayuda a otros a automatizar su trabajo.</p>
     <div class="share-buttons">
+      <a href="https://wa.me/?text={{ .Title }}%20{{ .Permalink }}" target="_blank" rel="noopener">💬 WhatsApp</a>
       <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" target="_blank" rel="noopener">💼 LinkedIn</a>
-      <a href="https://www.reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}" target="_blank" rel="noopener">🤖 Reddit</a>
     </div>
   </footer>
 </article>
@@ -46,13 +46,29 @@
   </div>
 </section>
 
-{{ $allPosts := where (where .Site.RegularPages "Section" "posts") "Permalink" "!=" .Permalink }}
-{{ $totalPosts := len $allPosts }}
-{{ if gt $totalPosts 0 }}
+{{ $allOthers := where (where .Site.RegularPages "Section" "posts") "Permalink" "!=" .Permalink }}
+{{ $currentTags := .Params.tags }}
+{{ $tagRelated := slice }}
+{{ $otherRelated := slice }}
+{{ range $allOthers }}
+  {{ $hasTag := false }}
+  {{ range .Params.tags }}
+    {{ if in $currentTags . }}
+      {{ $hasTag = true }}
+    {{ end }}
+  {{ end }}
+  {{ if $hasTag }}
+    {{ $tagRelated = $tagRelated | append . }}
+  {{ else }}
+    {{ $otherRelated = $otherRelated | append . }}
+  {{ end }}
+{{ end }}
+{{ $related := $tagRelated | append $otherRelated }}
+{{ if gt (len $related) 0 }}
 <section class="related-posts">
   <h3>Artículos relacionados</h3>
   <div class="posts-grid">
-    {{ range first 3 $allPosts }}
+    {{ range first 3 $related }}
     <article class="post-card">
       <a href="{{ .Permalink }}">
         <h3>{{ .Title }}</h3>
