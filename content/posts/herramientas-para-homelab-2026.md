@@ -10,6 +10,9 @@ tags: ["homelab", "herramientas", "self-hosting", "Docker", "2026"]
 
 Montar un homelab es emocionante, pero elegir las herramientas adecuadas puede ser abrumador. Después de probar decenas de opciones, estas son las que realmente merecen la pena — todas gratuitas y open source.
 
+<!--more-->
+
+
 ---
 
 ## 1. Uptime Kuma — Monitorización bonita y simple

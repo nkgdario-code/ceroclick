@@ -10,6 +10,9 @@ tags: ["homelab", "servidor", "automatización", "self-hosting", "scripts", "Doc
 
 Tener un homelab mola. Mantenerlo actualizado, hacer backups, limpiar logs, monitorizar que todo funciona... ya no mola tanto. Menos cuando puedes **automatizar el 80% de esas tareas** y olvidarte.
 
+<!--more-->
+
+
 Aquí van 10 automatizaciones que tengo funcionando en mi servidor y que puedes copiar directamente.
 
 ---

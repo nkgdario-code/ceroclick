@@ -10,6 +10,9 @@ tags: ["bot", "telegram", "IA", "inteligencia artificial", "tutorial", "automati
 
 ¿Te imaginas tener un asistente de IA **personal** que responde en Telegram cada vez que le preguntas? Pues puedes montarlo en 20 minutos. Gratis. Y sin saber programar.
 
+<!--more-->
+
+
 ---
 
 ## ¿Qué vamos a construir?

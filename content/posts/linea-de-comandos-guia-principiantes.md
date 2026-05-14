@@ -10,6 +10,9 @@ tags: ["terminal", "línea de comandos", "bash", "productividad", "linux", "prin
 
 Si solo usas el ratón para todo, estás dejando sobre la mesa **la herramienta más potente** que ya tienes instalada en tu ordenador. No es broma: lo que haces en 10 clics con el ratón, se hace en 3 teclas desde la terminal.
 
+<!--more-->
+
+
 ---
 
 ## ¿Qué es la terminal?

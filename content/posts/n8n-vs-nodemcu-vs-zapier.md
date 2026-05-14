@@ -10,6 +10,9 @@ tags: ["automatización", "n8n", "Node-RED", "Zapier", "herramientas", "workflow
 
 Las herramientas de automatización han explotado en los últimos años. Pero **no todas valen para lo mismo**. En este artículo te explico cuál es la mejor opción según tu caso real.
 
+<!--more-->
+
+
 ---
 
 ## La respuesta rápida

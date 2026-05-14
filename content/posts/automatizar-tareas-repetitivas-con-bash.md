@@ -10,6 +10,9 @@ tags: ["bash", "automatización", "productividad", "linux", "scripts", "terminal
 
 ¿Cada cuánto haces la misma tarea una y otra vez? Renombrar archivos, mover documentos, hacer copias de seguridad... Todo eso se puede hacer **una sola vez** y luego olvidarte para siempre.
 
+<!--more-->
+
+
 En esta guía te enseño desde cero cómo crear tus primeros scripts de automatización con Bash, el lenguaje que ya tienes instalado en tu ordenador (si usas Mac o Linux) o puedes instalar gratis en Windows.
 
 ---

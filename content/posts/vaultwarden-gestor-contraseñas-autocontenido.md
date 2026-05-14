@@ -10,6 +10,9 @@ tags: ["seguridad", "contraseñas", "vaultwarden", "self-hosting", "docker", "pr
 
 Cada vez tenemos más cuentas online. Netflix, correo, redes sociales, banco, trabajo... y cada una con una contraseña distinta. La mayoría de la gente **reutiliza contraseñas** o las apunta en un Excel. Ambas opciones son un desastre de seguridad.
 
+<!--more-->
+
+
 Hay una alternativa mejor: **tu propio gestor de contraseñas, en tu servidor, sin depender de nadie**.
 
 ---

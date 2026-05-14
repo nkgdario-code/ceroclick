@@ -10,6 +10,9 @@ tags: ["jellyfin", "música", "streaming", "self-hosting", "homelab", "media"]
 
 Spotify, Apple Music, YouTube Music... todos tienen algo en común: **pagas cada mes** y cuando dejas de pagar, pierdes el acceso. ¿Y si tuvieras tu propia plataforma de música **una sola vez**?
 
+<!--more-->
+
+
 Bienvenido a **Jellyfin**: tu servidor de medios personal, gratuito y autocontenido.
 
 ---

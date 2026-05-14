@@ -19,7 +19,6 @@ buildFuture = true
   author = "Ceroclick"
   favicon = "/favicon.ico"
   ogImage = "/images/og-image.png"
-  twitterHandle = "@ceroclick_es"
 
 [markup.goldmark.renderer]
   unsafe = true

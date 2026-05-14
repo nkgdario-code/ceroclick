@@ -10,6 +10,9 @@ tags: ["docker", "contenedores", "virtualización", "self-hosting", "tutorial", 
 
 Si has oído hablar de Docker pero no sabes exactamente qué es ni para qué sirve, este artículo es para ti. Lo voy a explicar **sin tecnicismos innecesarios**.
 
+<!--more-->
+
+
 ---
 
 ## La analogía del contenedor de mercancía
