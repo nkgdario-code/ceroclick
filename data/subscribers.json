@@ -29,6 +29,11 @@
       "email": "prueba@test.com",
       "date": "2026-05-14T15:37:37.307Z",
       "source": "ceroclick.es"
+    },
+    {
+      "email": "test2@ejemplo.com",
+      "date": "2026-05-14T15:43:55.944Z",
+      "source": "ceroclick.es"
     }
   ]
 }
