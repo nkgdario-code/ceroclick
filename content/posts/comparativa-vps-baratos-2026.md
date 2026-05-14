@@ -26,7 +26,7 @@ Aquí va nuestra selección de los 5 mejores proveedores de VPS baratos en 2026,
 
 ---
 
-## 1. Hetzner Cloud CX22 — El rey calidad/precio
+## 1. Hetzner Cloud CX22 “” El rey calidad/precio
 
 ### ¿Por qué Hetzner?
 - Servidores en **Alemania y Finlandia** (UE, GDPR compliant)
@@ -50,7 +50,7 @@ Para **casi todo**: webs, bots, homelab, game servers. Es la opción más equili
 
 ---
 
-## 2. Oracle Cloud Free Tier — Gratis de verdad
+## 2. Oracle Cloud Free Tier “” Gratis de verdad
 
 ### ¿Por qué Oracle?
 Oracle ofrece un **tier gratuito permanente** (no es solo un mes de prueba):
@@ -68,7 +68,7 @@ Para **aprender, hacer pruebas y proyectos personales**. Es increíble lo que pu
 
 ---
 
-## 3. Contabo VPS M — Potencia bruta
+## 3. Contabo VPS M “” Potencia bruta
 
 ### ¿Por qué Contabo?
 - 8 GB de RAM por solo 5,49€/mes es un precio imbatible
@@ -77,7 +77,7 @@ Para **aprender, hacer pruebas y proyectos personales**. Es increíble lo que pu
 
 ### ¿La trampa?
 - Los discos NVMe son **compartidos** (no tan rápidos como SSD dedicados)
-- No tiene panel web como Hetzner — más orientado a usuarios con experiencia
+- No tiene panel web como Hetzner “” más orientado a usuarios con experiencia
 - IP de salida compartida (puede estar en listas negras para email)
 
 ### ¿Para quién es?
@@ -85,7 +85,7 @@ Para quien necesite **mucha RAM** (bases de datos, muchos contenedores Docker) a
 
 ---
 
-## 4. Vultr $6/mo — Simplicidad
+## 4. Vultr $6/mo “” Simplicidad
 
 ### ¿Por qué Vultr?
 - 10 ubicaciones en todo el mundo
@@ -108,7 +108,7 @@ Para proyectos que necesitan estar en múltiples ubicaciones geográficas o usua
 
 ---
 
-## 5. Racknerd — El sleeper hit
+## 5. Racknerd “” El sleeper hit
 
 ### ¿Por qué Racknerd?
 - 80 GB SSD por 4,75€/mes
@@ -135,7 +135,7 @@ Datos aproximados basados en tests de la comunidad (2026):
 | **CPU (sysbench)** | 450 pts | 280 pts | 900 pts | 220 pts |
 | **RAM lectura** | 6 GB/s | 3 GB/s | 12 GB/s | 2 GB/s |
 | **Disco secuencial** | 500 MB/s | 200 MB/s | 800 MB/s* | 300 MB/s |
-| **Red (descarga)** | 1 Gbps* | 4 Gbps | ∞** | 1 Gbps |
+| **Red (descarga)** | 1 Gbps* | 4 Gbps | âˆž** | 1 Gbps |
 | **Ping (UE)** | 1-3 ms | 150+ ms (US) | 2-5 ms | 5-10 ms |
 
 *\* Compartido / sujeto a fair use*

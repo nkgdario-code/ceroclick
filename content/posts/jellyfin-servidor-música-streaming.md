@@ -1,34 +1,34 @@
 ---
-title: "C�mo montar un servidor de m�sica streaming en casa con Jellyfin"
-description: "�Tienes una colecci�n de m�sica o quieres escuchar tu m�sica sin anuncios ni limitaciones? Jellyfin te da tu propio Spotify gratuito y autocontenido."
+title: "Cómo montar un servidor de música streaming en casa con Jellyfin"
+description: "¿Tienes una colección de música o quieres escuchar tu música sin anuncios ni limitaciones? Jellyfin te da tu propio Spotify gratuito y autocontenido."
 date: 2026-05-24
 draft: false
-tags: ["jellyfin", "m�sica", "streaming", "self-hosting", "homelab", "media"]
+tags: ["jellyfin", "música", "streaming", "self-hosting", "homelab", "media"]
 ---
 
 # Tu propio Spotify gratuito: Jellyfin Music
 
-Spotify, Apple Music, YouTube Music... todos tienen algo en com�n: **pagas cada mes** y cuando dejas de pagar, pierdes el acceso. �Y si tuvieras tu propia plataforma de m�sica **una sola vez**?
+Spotify, Apple Music, YouTube Music... todos tienen algo en común: **pagas cada mes** y cuando dejas de pagar, pierdes el acceso. ¿Y si tuvieras tu propia plataforma de música **una sola vez**?
 
 Bienvenido a **Jellyfin**: tu servidor de medios personal, gratuito y autocontenido.
 
 ---
 
-## �Qu� es Jellyfin?
+## ¿Qué es Jellyfin?
 
-Jellyfin es un servidor multimedia **open source** que organiza tu m�sica, pel�culas y series. Es el sustituto libre de Plex, y funciona en cualquier ordenador, incluso un Raspberry Pi.
+Jellyfin es un servidor multimedia **open source** que organiza tu música, películas y series. Es el sustituto libre de Plex, y funciona en cualquier ordenador, incluso un Raspberry Pi.
 
-### Caracter�sticas clave:
--  **100% gratuito**, sin funciones de pago escondidas
--  **Sin anuncios**, nunca
--  **Tus datos son tuyos** � nada se sube a la nube
--  **Apps oficiales** para m�vil, TV, navegador y tablet
--  **Transcodificaci�n** � escucha tu m�sica desde cualquier conexi�n
--  **M�ltiples usuarios** � cada persona con su perfil y sus listas
+### Características clave:
+- ✅ **100% gratuito**, sin funciones de pago escondidas
+- ✅ **Sin anuncios**, nunca
+- ✅ **Tus datos son tuyos** — nada se sube a la nube
+- ✅ **Apps oficiales** para móvil, TV, navegador y tablet
+- ✅ **Transcodificación** — escucha tu música desde cualquier conexión
+- ✅ **Múltiples usuarios** — cada persona con su perfil y sus listas
 
 ---
 
-## Instalaci�n con Docker (la forma m�s f�cil)
+## Instalación con Docker (la forma más fácil)
 
 ```yaml
 # docker-compose.yml
@@ -44,7 +44,7 @@ services:
     volumes:
       - ./config:/config
       - ./cache:/cache
-      - /ruta/a/tu/m�sica:/music
+      - /ruta/a/tu/música:/music
     environment:
       - PUID=1000
       - PGID=1000
@@ -55,24 +55,24 @@ services:
 docker-compose up -d
 ```
 
-Ahora accede a `http://tu-servidor:8096` y sigue el asistente de configuraci�n.
+Ahora accede a `http://tu-servidor:8096` y sigue el asistente de configuración.
 
 ---
 
-## Configuraci�n inicial
+## Configuración inicial
 
-### 1. A�ade tu biblioteca de m�sica
+### 1. Añade tu biblioteca de música
 
-1. Ve a **Dashboard � Libraries � Add Library**
+1. Ve a **Dashboard → Libraries → Add Library**
 2. Selecciona **Music** como tipo
-3. A�ade la carpeta donde tienes tu m�sica (`/music`)
-4. Jellyfin escanear� y organizar� autom�ticamente por artista, �lbum y g�nero
-5. Activa la descarga de **metadatos** (portadas, letras, biograf�as)
+3. Añade la carpeta donde tienes tu música (`/music`)
+4. Jellyfin escaneará y organizará automáticamente por artista, álbum y género
+5. Activa la descarga de **metadatos** (portadas, letras, biografías)
 
-### 2. Optimiza para m�sica
+### 2. Optimiza para música
 
-En los ajustes de la biblioteca de m�sica:
-- Activa **"Descargar metadatos autom�ticamente"**
+En los ajustes de la biblioteca de música:
+- Activa **"Descargar metadatos automáticamente"**
 - Activa **"Descarga de letras"**
 - Configura la calidad de imagen para las portadas (alta recomendado)
 
@@ -80,16 +80,16 @@ En los ajustes de la biblioteca de m�sica:
 
 Jellyfin permite crear **usuarios ilimitados** gratis:
 - Cada uno tiene su perfil, sus listas y su historial
-- Puedes controlar qu� biblioteca puede ver cada usuario
-- Los ni�os pueden tener su perfil con contenido filtrado
+- Puedes controlar qué biblioteca puede ver cada usuario
+- Los niños pueden tener su perfil con contenido filtrado
 
 ---
 
-## C�mo escuchar tu m�sica
+## Cómo escuchar tu música
 
-### En tu m�vil
+### En tu móvil
 - **Jellyfin para Android/iOS** (gratis, sin anuncios)
-- **FinTunes** (cliente de terceros, m�s bonito)
+- **FinTunes** (cliente de terceros, más bonito)
 - Compatible con **MPV, VLC** y otros reproductores
 
 ### En tu ordenador
@@ -98,50 +98,50 @@ Jellyfin permite crear **usuarios ilimitados** gratis:
 
 ### En tu Smart TV
 - **Jellyfin para Android TV / Fire TV / Apple TV**
-- Compatible con **Chromecast** (env�a m�sica a tu altavoz)
+- Compatible con **Chromecast** (envía música a tu altavoz)
 
 ### En tu coche
-- Usa la app m�vil con Android Auto o CarPlay
-- Tu m�sica, sin anuncios, sin l�mite de skips
+- Usa la app móvil con Android Auto o CarPlay
+- Tu música, sin anuncios, sin límite de skips
 
 ---
 
-## C�mo importar tu m�sica
+## Cómo importar tu música
 
-Si tienes la m�sica en tu ordenador:
+Si tienes la música en tu ordenador:
 
 ```bash
-# Opci�n 1: Copia directa
-cp -r /home/usuario/M�sica/ /ruta/a/jellyfin/music/
+# Opción 1: Copia directa
+cp -r /home/usuario/Música/ /ruta/a/jellyfin/music/
 
-# Opci�n 2: Si usas un NAS, monta la carpeta compartida
+# Opción 2: Si usas un NAS, monta la carpeta compartida
 mount -t cifs //nas/musica /ruta/a/jellyfin/music/ -o username=tuuser
 
-# Opci�n 3: Si la tienes en Google Drive o similar
+# Opción 3: Si la tienes en Google Drive o similar
 rclone copy gdrive:/Music /ruta/a/jellyfin/music/
 ```
 
 ### Formatos soportados
-| Formato | �Soportado? |
+| Formato | ¿Soportado? |
 |---------|-------------|
-| MP3 |  |
-| FLAC |  |
-| AAC |  |
-| OGG |  |
-| WAV |  |
-| ALAC |  |
+| MP3 | ✅ |
+| FLAC | ✅ |
+| AAC | ✅ |
+| OGG | ✅ |
+| WAV | ✅ |
+| ALAC | ✅ |
 
-**Jellyfin tambi�n transcodifica** si tu dispositivo no soporta el formato original.
+**Jellyfin también transcodifica** si tu dispositivo no soporta el formato original.
 
 ---
 
-## Truco: Escucha tu m�sica desde fuera de casa
+## Truco: Escucha tu música desde fuera de casa
 
-Si quieres acceder a tu servidor desde cualquier parte del mundo (por ejemplo, desde el m�vil con datos):
+Si quieres acceder a tu servidor desde cualquier parte del mundo (por ejemplo, desde el móvil con datos):
 
-1. **Opci�n f�cil**: usa Tailscale o ZeroTier (VPN mesh gratuita)
-2. **Opci�n media**: configura un reverse proxy con Caddy/Nginx + dominio
-3. **Opci�n avanzada**: Cloudflare Tunnel (gratis, sin abrir puertos)
+1. **Opción fácil**: usa Tailscale o ZeroTier (VPN mesh gratuita)
+2. **Opción media**: configura un reverse proxy con Caddy/Nginx + dominio
+3. **Opción avanzada**: Cloudflare Tunnel (gratis, sin abrir puertos)
 
 Con Tailzone, desde fuera de casa simplemente abres la app de Jellyfin y conectas como si estuvieras en tu WiFi. **Funciona en 5 segundos.**
 
@@ -149,13 +149,13 @@ Con Tailzone, desde fuera de casa simplemente abres la app de Jellyfin y conecta
 
 ## Comparativa Jellyfin vs alternativas
 
-| Caracter�stica | Jellyfin | Plex | Spotify |
+| Característica | Jellyfin | Plex | Spotify |
 |---|---|---|---|
-| **Precio** | Gratis | Gratis (con limitaciones) | 10�/mes |
-| **Sin anuncios** |  | L (versi�n gratis) | L |
-| **Sin l�mite de canciones** |  |  | Solo con suscripci�n |
-| **Tus datos privados** |  | Parcial | L |
-| **Funciona offline** |  (descarga) |  | Solo con premium |
+| **Precio** | Gratis | Gratis (con limitaciones) | 10€/mes |
+| **Sin anuncios** | ✅ | ❌ (versión gratis) | ❌ |
+| **Sin límite de canciones** | ✅ | ✅ | Solo con suscripción |
+| **Tus datos privados** | ✅ | Parcial | ❌ |
+| **Funciona offline** | ✅ (descarga) | ✅ | Solo con premium |
 | **Sin internet necesitado** | Solo para subir la biblioteca una vez | Solo para subir | Siempre |
 
 ---
@@ -163,15 +163,15 @@ Con Tailzone, desde fuera de casa simplemente abres la app de Jellyfin y conecta
 ## El coste real de tu propio Spotify
 
 ```
-- Servidor (ya lo tienes o un Raspberry Pi): 0-50�
-- Jellyfin: 0�
-- Apps m�viles: 0�
-- M�sica: ya la tienes o compras una vez
-- Coste mensual: 0 �
+- Servidor (ya lo tienes o un Raspberry Pi): 0-50€
+- Jellyfin: 0€
+- Apps móviles: 0€
+- Música: ya la tienes o compras una vez
+- Coste mensual: 0 €
 ```
 
-**Una vez montado, no vuelves a pagar por m�sica en streaming nunca m�s.**
+**Una vez montado, no vuelves a pagar por música en streaming nunca más.**
 
 ---
 
-*�Tienes una colecci�n de m�sica que quieres migrar? �Necesitas ayuda con la configuraci�n de Jellyfin?* Cu�ntamelo y lo montamos juntos. �
+*¿Tienes una colección de música que quieres migrar? ¿Necesitas ayuda con la configuración de Jellyfin?* Cuéntamelo y lo montamos juntos. 🎵

@@ -31,7 +31,7 @@ Necesitas:
 
 ## Paso 1: Configurar las credenciales en n8n
 
-En n8n, ve a **Settings → Credentials** y añade:
+En n8n, ve a **Settings â†’ Credentials** y añade:
 
 ### Telegram API
 - **Bot Token**: el token que copiaste del BotFather
@@ -50,19 +50,19 @@ En n8n, ve a **Settings → Credentials** y añade:
 
 ## Paso 2: Crear el workflow
 
-### Nodo 1 — Telegram Trigger
+### Nodo 1 “” Telegram Trigger
 1. Arrastra un nodo **Telegram Trigger** al canvas
 2. Selecciona tu credencial de Telegram
 3. Deja "Updates" como está
 
-### Nodo 2 — Set (formatear datos)
+### Nodo 2 “” Set (formatear datos)
 1. Arrastra un nodo **Set** y conéctalo al anterior
 2. Configura:
-   - `chat_id` → `{{ $json.message.chat.id }}`
-   - `texto` → `{{ $json.message.text }}`
-   - `fecha` → `{{ $now.toISO() }}`
+   - `chat_id` â†’ `{{ $json.message.chat.id }}`
+   - `texto` â†’ `{{ $json.message.text }}`
+   - `fecha` â†’ `{{ $now.toISO() }}`
 
-### Nodo 3 — Google Sheets
+### Nodo 3 “” Google Sheets
 1. Arrastra un nodo **Google Sheets** y conéctalo
 2. Selecciona tu credencial de Google
 3. Operación: **Append** (añadir fila)
@@ -73,7 +73,7 @@ En n8n, ve a **Settings → Credentials** y añade:
 ### Conecta todo y activa
 
 ```
-[Telegram Trigger] → [Set] → [Google Sheets]
+[Telegram Trigger] â†’ [Set] â†’ [Google Sheets]
 ```
 
 Pulsa **"Active"** en la esquina superior derecha. ¡Ya está!
@@ -84,7 +84,7 @@ Pulsa **"Active"** en la esquina superior derecha. ¡Ya está!
 
 1. Abre Telegram y manda un mensaje a tu bot
 2. Ve a tu hoja de Google Sheets
-3. Debería aparecer una nueva fila con tu mensaje ✅
+3. Debería aparecer una nueva fila con tu mensaje âœ…
 
 ---
 
@@ -103,9 +103,9 @@ Pulsa **"Active"** en la esquina superior derecha. ¡Ya está!
 ## Resumen
 
 En 30 minutos has creado:
-- ✅ Un bot de Telegram funcional
-- ✅ Un sistema de almacenamiento en Google Sheets
-- ✅ Un workflow automatizado que guarda todo lo que le mandes
+- âœ… Un bot de Telegram funcional
+- âœ… Un sistema de almacenamiento en Google Sheets
+- âœ… Un workflow automatizado que guarda todo lo que le mandes
 
 Esto es solo el principio. Con n8n puedes conectar **cientos de servicios** y crear automatizaciones que te ahorran horas cada día.
 

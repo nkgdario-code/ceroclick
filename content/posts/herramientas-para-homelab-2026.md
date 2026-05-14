@@ -1,6 +1,6 @@
 ---
 title: "Las 10 mejores herramientas para tu homelab en 2026 (todas gratis)"
-description: "Una selecci�n de las 10 herramientas imprescindibles para cualquier homelab en 2026. Gesti�n de contrase�as, monitorizaci�n, media y m�s."
+description: "Una selección de las 10 herramientas imprescindibles para cualquier homelab en 2026. Gestión de contraseñas, monitorización, media y más."
 date: 2026-05-28
 draft: false
 tags: ["homelab", "herramientas", "self-hosting", "Docker", "2026"]
@@ -8,18 +8,18 @@ tags: ["homelab", "herramientas", "self-hosting", "Docker", "2026"]
 
 # Las 10 mejores herramientas para tu homelab en 2026
 
-Montar un homelab es emocionante, pero elegir las herramientas adecuadas puede ser abrumador. Despu�s de probar decenas de opciones, estas son las que realmente merecen la pena � todas gratuitas y open source.
+Montar un homelab es emocionante, pero elegir las herramientas adecuadas puede ser abrumador. Después de probar decenas de opciones, estas son las que realmente merecen la pena — todas gratuitas y open source.
 
 ---
 
-## 1. Uptime Kuma � Monitorizaci�n bonita y simple
+## 1. Uptime Kuma — Monitorización bonita y simple
 
-**Qu� hace:** Monitoriza tus servidores, servicios y webs con alertas autom�ticas.
+**Qué hace:** Monitoriza tus servidores, servicios y webs con alertas automáticas.
 
-�Por qu� Uptime Kuma?
-- Interfaz moderna y f�cil de usar
+¿Por qué Uptime Kuma?
+- Interfaz moderna y fácil de usar
 - Notificaciones por Telegram, Discord, email, Slack...
-- Monitoriza HTTP, TCP, DNS, ping, certificados SSL y m�s
+- Monitoriza HTTP, TCP, DNS, ping, certificados SSL y más
 - Dashboard en tiempo real
 - Se instala en un solo comando de Docker
 
@@ -31,30 +31,30 @@ docker run -d --name uptime-kuma \
   louislam/uptime-kuma:1
 ```
 
-**Puntuaci�n:** PPPPP � Si solo puedes instalar UNA herramienta, que sea esta.
+**Puntuación:** ⭐⭐⭐⭐⭐ — Si solo puedes instalar UNA herramienta, que sea esta.
 
 ---
 
-## 2. Vaultwarden � Tu gestor de contrase�as
+## 2. Vaultwarden — Tu gestor de contraseñas
 
-**Qu� hace:** Gestor de contrase�as compatible con Bitwarden, autocontenido.
+**Qué hace:** Gestor de contraseñas compatible con Bitwarden, autocontenido.
 
-**Puntuaci�n:** PPPPP � Esencial para la seguridad.
+**Puntuación:** ⭐⭐⭐⭐⭐ — Esencial para la seguridad.
 
-*(Consulta nuestra gu�a completa de instalaci�n en otro art�culo de esta web.)*
+*(Consulta nuestra guía completa de instalación en otro artículo de esta web.)*
 
 ---
 
-## 3. Portainer � Gesti�n de Docker sin complicaciones
+## 3. Portainer — Gestión de Docker sin complicaciones
 
-**Qu� hace:** Interfaz web para gestionar contenedores, im�genes, redes y vol�menes Docker.
+**Qué hace:** Interfaz web para gestionar contenedores, imágenes, redes y volúmenes Docker.
 
-�Por qu� Portainer?
+¿Por qué Portainer?
 - Gestiona todos tus contenedores desde el navegador
 - Crea stacks con Docker Compose visualmente
 - Monitoriza recursos (CPU, RAM, disco)
-- Gesti�n de usuarios y permisos
-- Actualizaci�n de contenedores con un clic
+- Gestión de usuarios y permisos
+- Actualización de contenedores con un clic
 
 ```bash
 docker run -d --name portainer \
@@ -65,55 +65,55 @@ docker run -d --name portainer \
   portainer/portainer-ce:latest
 ```
 
-**Puntuaci�n:** PPPP � Imprescindible cuando tienes m�s de 5 contenedores.
+**Puntuación:** ⭐⭐⭐⭐ — Imprescindible cuando tienes más de 5 contenedores.
 
 ---
 
-## 4. Jellyfin � Tu propio Spotify/Netflix
+## 4. Jellyfin — Tu propio Spotify/Netflix
 
-**Qu� hace:** Servidor multimedia para m�sica, pel�culas y series.
+**Qué hace:** Servidor multimedia para música, películas y series.
 
-- Reproduce en cualquier dispositivo (m�vil, TV, navegador)
-- Sin anuncios, sin l�mites
-- Transcodificaci�n autom�tica
+- Reproduce en cualquier dispositivo (móvil, TV, navegador)
+- Sin anuncios, sin límites
+- Transcodificación automática
 - Multi-usuario
-- Scrapea metadatos y portadas autom�ticamente
+- Scrapea metadatos y portadas automáticamente
 
 ```bash
 docker run -d --name jellyfin \
   -p 8096:8096 \
   -v jellyfin_config:/config \
   -v jellyfin_cache:/cache \
-  -v /ruta/a/tu/m�sica:/music \
+  -v /ruta/a/tu/música:/music \
   --restart unless-stopped \
   jellyfin/jellyfin:latest
 ```
 
-**Puntuaci�n:** PPPPP � La mejor alternativa gratuita a Plex.
+**Puntuación:** ⭐⭐⭐⭐⭐ — La mejor alternativa gratuita a Plex.
 
 ---
 
-## 5. n8n � Automatizaci�n total
+## 5. n8n — Automatización total
 
-**Qu� hace:** Conecta servicios y automatiza flujos de trabajo.
+**Qué hace:** Conecta servicios y automatiza flujos de trabajo.
 
 - 200+ integraciones disponibles
 - Flujos visuales arrastrables
-- Puedes a�adir c�digo JavaScript/Python cuando lo necesitas
+- Puedes añadir código JavaScript/Python cuando lo necesitas
 - Self-hosted, tus datos no salen de tu servidor
 
-**Puntuaci�n:** PPPPP � El cerebro de tu homelab.
+**Puntuación:** ⭐⭐⭐⭐⭐ — El cerebro de tu homelab.
 
 ---
 
-## 6. Grafana + Prometheus � Monitorizaci�n avanzada
+## 6. Grafana + Prometheus — Monitorización avanzada
 
-**Qu� hace:** Sistema de monitorizaci�n con dashboards personalizables.
+**Qué hace:** Sistema de monitorización con dashboards personalizables.
 
-- **Prometheus** recoge m�tricas de tu servidor
-- **Grafana** las muestra en gr�ficos bonitos y personalizables
+- **Prometheus** recoge métricas de tu servidor
+- **Grafana** las muestra en gráficos bonitos y personalizables
 - Puedes monitorizar CPU, RAM, disco, red, temperatura...
-- Alertas autom�ticas por Telegram/email
+- Alertas automáticas por Telegram/email
 
 ```bash
 # Prometheus
@@ -130,19 +130,19 @@ docker run -d --name grafana \
   grafana/grafana-oss
 ```
 
-**Puntuaci�n:** PPPP � Imprescindible si te gusta tenerlo todo bajo control.
+**Puntuación:** ⭐⭐⭐⭐ — Imprescindible si te gusta tenerlo todo bajo control.
 
 ---
 
-## 7. Nextcloud � Tu propio Google Drive
+## 7. Nextcloud — Tu propio Google Drive
 
-**Qu� hace:** Almacenamiento y sincronizaci�n de archivos en tu servidor.
+**Qué hace:** Almacenamiento y sincronización de archivos en tu servidor.
 
 - Sincroniza archivos entre dispositivos (como Dropbox/Google Drive)
-- Comparte archivos con enlaces p�blicos o privados
-- Edici�n colaborativa de documentos
+- Comparte archivos con enlaces públicos o privados
+- Edición colaborativa de documentos
 - Calendario y contactos integrados
-- Cliente de escritorio, m�vil y web
+- Cliente de escritorio, móvil y web
 
 ```bash
 docker run -d --name nextcloud \
@@ -152,16 +152,16 @@ docker run -d --name nextcloud \
   nextcloud:latest
 ```
 
-**Puntuaci�n:** PPPP � Para quien quiera control total sobre sus archivos.
+**Puntuación:** ⭐⭐⭐⭐ — Para quien quiera control total sobre sus archivos.
 
 ---
 
-## 8. Watchtower � Actualizaci�n autom�tica de contenedores
+## 8. Watchtower — Actualización automática de contenedores
 
-**Qu� hace:** Actualiza autom�ticamente tus contenedores Docker cuando hay nuevas versiones.
+**Qué hace:** Actualiza automáticamente tus contenedores Docker cuando hay nuevas versiones.
 
-- Revisa autom�ticamente las im�genes en Docker Hub
-- Descarga la nueva versi�n y reinicia el contenedor
+- Revisa automáticamente las imágenes en Docker Hub
+- Descarga la nueva versión y reinicia el contenedor
 - Se configura y te olvidas
 
 ```bash
@@ -171,15 +171,15 @@ docker run -d --name watchtower \
   --cleanup --schedule "0 0 4 * * *"
 ```
 
-**Puntuaci�n:** PPPP � Inst�lalo y olv�date de actualizaciones.
+**Puntuación:** ⭐⭐⭐⭐ — Instálalo y olvídate de actualizaciones.
 
 ---
 
-## 9. Navidrome � Tu servidor de m�sica personal
+## 9. Navidrome — Tu servidor de música personal
 
-**Qu� hace:** Servidor de m�sica tipo Spotify, ligero y eficiente.
+**Qué hace:** Servidor de música tipo Spotify, ligero y eficiente.
 
-- Reproduce m�sica desde el navegador o apps m�viles
+- Reproduce música desde el navegador o apps móviles
 - Scrapea portadas, letras y metadatos
 - Soporta transcoding (convierte FLAC a MP3 al vuelo)
 - Ligero: funciona en un Raspberry Pi
@@ -187,19 +187,19 @@ docker run -d --name watchtower \
 ```bash
 docker run -d --name navidrome \
   -p 4533:4533 \
-  -v /ruta/a/tu/m�sica:/music \
+  -v /ruta/a/tu/música:/music \
   -v navidrome_data:/data \
   --restart unless-stopped \
   deluanloudon/navidrome:latest
 ```
 
-**Puntuaci�n:** PPPP � M�s ligero que Jellyfin si solo escuchas m�sica.
+**Puntuación:** ⭐⭐⭐⭐ — Más ligero que Jellyfin si solo escuchas música.
 
 ---
 
-## 10. Duplicati � Backups cifrados en la nube
+## 10. Duplicati — Backups cifrados en la nube
 
-**Qu� hace:** Backups autom�ticos, cifrados y a m�ltiples destinos.
+**Qué hace:** Backups automáticos, cifrados y a múltiples destinos.
 
 - Backups cifrados con AES-256
 - Soporta destinos: S3, Google Drive, Dropbox, FTP, WebDAV...
@@ -215,39 +215,39 @@ docker run -d --name duplicati \
   linuxserver/duplicati
 ```
 
-**Puntuaci�n:** PPPP � Los backups son lo �NICO que no puedes negociar.
+**Puntuación:** ⭐⭐⭐⭐ — Los backups son lo ÚNICO que no puedes negociar.
 
 ---
 
 ## Resumen visual
 
-| Herramienta | Para qu� | Prioridad |
+| Herramienta | Para qué | Prioridad |
 |---|---|---|
-| Uptime Kuma | Monitorizaci�n | 4 Alta |
-| Vaultwarden | Contrase�as | 4 Alta |
-| Portainer | Gesti�n Docker | � Media-alta |
-| Jellyfin | Pelis y m�sica | � Media-alta |
-| n8n | Automatizaci�n | � Media-alta |
-| Grafana+Prometheus | M�tricas | � Media |
-| Nextcloud | Archivos | � Media |
-| Watchtower | Auto-actualizar | � Baja (pero �til) |
-| Navidrome | M�sica | � Baja |
-| Duplicati | Backups cifrados | 4 Alta |
+| Uptime Kuma | Monitorización | 🔴 Alta |
+| Vaultwarden | Contraseñas | 🔴 Alta |
+| Portainer | Gestión Docker | 🟡 Media-alta |
+| Jellyfin | Pelis y música | 🟡 Media-alta |
+| n8n | Automatización | 🟡 Media-alta |
+| Grafana+Prometheus | Métricas | 🟡 Media |
+| Nextcloud | Archivos | 🟡 Media |
+| Watchtower | Auto-actualizar | 🟢 Baja (pero útil) |
+| Navidrome | Música | 🟢 Baja |
+| Duplicati | Backups cifrados | 🔴 Alta |
 
 ---
 
-## Orden de instalaci�n recomendado
+## Orden de instalación recomendado
 
-1. **Uptime Kuma** � Vigila que todo funcione
-2. **Vaultwarden** � Asegura tus contrase�as
-3. **Duplicati** � Protege tus datos
-4. **Watchtower** � Mant�n todo actualizado
-5. **Portainer** � Gestiona tu infraestructura
-6. **n8n** � Automatiza tu vida
-7. **Jellyfin o Navidrome** � Entretenimiento
-8. **Grafana + Prometheus** � M�tricas avanzadas
-9. **Nextcloud** � Si necesitas sincronizaci�n de archivos
+1. **Uptime Kuma** → Vigila que todo funcione
+2. **Vaultwarden** → Asegura tus contraseñas
+3. **Duplicati** → Protege tus datos
+4. **Watchtower** → Mantén todo actualizado
+5. **Portainer** → Gestiona tu infraestructura
+6. **n8n** → Automatiza tu vida
+7. **Jellyfin o Navidrome** → Entretenimiento
+8. **Grafana + Prometheus** → Métricas avanzadas
+9. **Nextcloud** → Si necesitas sincronización de archivos
 
 ---
 
-*�Ya tienes alguno de estos en tu homelab? �Cu�l echas de menos en la lista?*</tool_call>}
+*¿Ya tienes alguno de estos en tu homelab? ¿Cuál echas de menos en la lista?*</tool_call>}
