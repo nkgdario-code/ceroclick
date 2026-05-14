@@ -6,7 +6,6 @@ draft: false
 tags: ["VPS", "hosting", "servidor", "barato", "comparativa", "self-hosting"]
 ---
 
-# Comparativa de VPS baratos en 2026
 
 Si necesitas un servidor para tu bot de Telegram, un sitio web, o tu homelab, no necesitas gastarte 50€/mes. Hay opciones excelentes por **menos de 5€ al mes**.
 

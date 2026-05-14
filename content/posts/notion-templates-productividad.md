@@ -6,7 +6,6 @@ draft: false
 tags: ["notion", "productividad", "plantillas", "organización", "gestión de proyectos", "trabajo"]
 ---
 
-# 5 plantillas de Notion que te ahorran 5 horas a la semana
 
 Notion es mucho más que una app de notas. Con las plantillas adecuadas, puedes convertirlo en tu **centro de operaciones personal**: gestión de proyectos, hábitos, finanzas, notas de reuniones...
 

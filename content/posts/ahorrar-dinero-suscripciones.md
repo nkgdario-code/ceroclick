@@ -6,7 +6,6 @@ draft: false
 tags: ["ahorro", "suscripciones", "automatización", "finanzas", "scripts", "productividad"]
 ---
 
-# Cómo ahorrar dinero automatizando la gestión de tus suscripciones
 
 Cada mes, ¿cuántas suscripciones te cobran sin que te des cuenta? Spotify, Netflix, esa app de fitness que usaste 3 días, el VPN que ya no necesitas... Los pequeños cargos se acumulan y al año puedes estar perdiendo **cientos de euros**.
 

@@ -6,7 +6,6 @@ draft: false
 tags: ["jellyfin", "música", "streaming", "self-hosting", "homelab", "media"]
 ---
 
-# Tu propio Spotify gratuito: Jellyfin Music
 
 Spotify, Apple Music, YouTube Music... todos tienen algo en común: **pagas cada mes** y cuando dejas de pagar, pierdes el acceso. ¿Y si tuvieras tu propia plataforma de música **una sola vez**?
 

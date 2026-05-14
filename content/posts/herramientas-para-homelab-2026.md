@@ -6,7 +6,6 @@ draft: false
 tags: ["homelab", "herramientas", "self-hosting", "Docker", "2026"]
 ---
 
-# Las 10 mejores herramientas para tu homelab en 2026
 
 Montar un homelab es emocionante, pero elegir las herramientas adecuadas puede ser abrumador. Después de probar decenas de opciones, estas son las que realmente merecen la pena — todas gratuitas y open source.
 

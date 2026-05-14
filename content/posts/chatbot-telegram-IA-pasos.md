@@ -6,7 +6,6 @@ draft: false
 tags: ["bot", "telegram", "IA", "inteligencia artificial", "tutorial", "automatización", "API"]
 ---
 
-# Cómo crear un bot de IA en Telegram en 20 minutos
 
 ¿Te imaginas tener un asistente de IA **personal** que responde en Telegram cada vez que le preguntas? Pues puedes montarlo en 20 minutos. Gratis. Y sin saber programar.
 

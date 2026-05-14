@@ -6,7 +6,6 @@ draft: false
 tags: ["bash", "automatización", "productividad", "linux", "scripts", "terminal"]
 ---
 
-# Cómo automatizar tareas repetitivas con Bash
 
 ¿Cada cuánto haces la misma tarea una y otra vez? Renombrar archivos, mover documentos, hacer copias de seguridad... Todo eso se puede hacer **una sola vez** y luego olvidarte para siempre.
 

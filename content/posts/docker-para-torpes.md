@@ -6,7 +6,6 @@ draft: false
 tags: ["docker", "contenedores", "virtualización", "self-hosting", "tutorial", "principiante"]
 ---
 
-# Docker para torpes: qué es y cómo empezar
 
 Si has oído hablar de Docker pero no sabes exactamente qué es ni para qué sirve, este artículo es para ti. Lo voy a explicar **sin tecnicismos innecesarios**.
 

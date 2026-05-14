@@ -6,7 +6,6 @@ draft: false
 tags: ["homelab", "servidor", "automatización", "self-hosting", "scripts", "Docker"]
 ---
 
-# Automatiza tu homelab: 10 tareas que tu servidor puede hacer solo
 
 Tener un homelab mola. Mantenerlo actualizado, hacer backups, limpiar logs, monitorizar que todo funciona... ya no mola tanto. Menos cuando puedes **automatizar el 80% de esas tareas** y olvidarte.
 

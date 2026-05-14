@@ -6,7 +6,6 @@ draft: false
 tags: ["n8n", "tutorial", "automatización", "workflow", "DIY", "self-hosted"]
 ---
 
-# De Zero a automatizado: tu primer workflow en n8n en 30 minutos
 
 n8n puede parecer intimidante al principio, pero una vez haces tu primer flujo, te enganchas. En este tutorial vamos a crear un **bot de Telegram** que guarda lo que le mandes en una **hoja de Google Sheets**. Sin código. En 30 minutos.
 

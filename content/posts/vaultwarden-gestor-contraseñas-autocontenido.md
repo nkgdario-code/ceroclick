@@ -6,7 +6,6 @@ draft: false
 tags: ["seguridad", "contraseñas", "vaultwarden", "self-hosting", "docker", "privacidad"]
 ---
 
-# Cómo montar tu propio gestor de contraseñas autocontenido
 
 Cada vez tenemos más cuentas online. Netflix, correo, redes sociales, banco, trabajo... y cada una con una contraseña distinta. La mayoría de la gente **reutiliza contraseñas** o las apunta en un Excel. Ambas opciones son un desastre de seguridad.
 

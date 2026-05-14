@@ -6,7 +6,6 @@ draft: false
 tags: ["IA", "herramientas", "productividad", "gratis", "AI", "trabajo"]
 ---
 
-# 15 herramientas de IA gratuitas que van a cambiar tu forma de trabajar
 
 No necesitas pagar por IA para ser más productivo. Hay decenas de herramientas gratuitas que usan inteligencia artificial para hacer tu trabajo más rápido, más fácil y más inteligente.
 
