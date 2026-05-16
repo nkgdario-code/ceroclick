@@ -56,31 +56,42 @@ const slug = title
 
 const filePath = path.join(CONTENT_DIR, `${slug}.md`);
 
-if (fs.existsSync(filePath)) {
-  console.log(`⚠️ El archivo ya existe. Se actualizará la fecha.`);
-}
-
-// --- 2. Crear/escribir el archivo ---
 const today = new Date().toISOString().slice(0, 10);
 const tags = tagsInput.split(',').filter(Boolean).map(t => `"${t.trim()}"`).join(', ');
 
-const frontMatter = `---
+const frontMatterNew = `---
 title: "${title}"
 description: "${desc}"
 date: ${today}
 draft: false
-tags: [${tags || '"automatización"'}]
+tags: [${tags || '"automatizacion"'}]
 ---
 
 # ${title}
 
-_Artículo generado el ${today} — rellena aquí el contenido._
+`;
 
-`
+let skipWrite = false;
 
-fs.writeFileSync(filePath, frontMatter, 'utf-8');
-console.log(`✅ Artículo creado: content/posts/${slug}.md`);
-console.log(`   URL: https://ceroclick.es/posts/${slug}/\n`);
+if (fs.existsSync(filePath)) {
+  let existing = fs.readFileSync(filePath, 'utf-8');
+  if (existing.includes('_Artículo generado el') || existing.includes('rellena aquí el contenido') || existing.includes('Artículo generado')) {
+    // Es placeholder o contenido vacio, regenerar
+    fs.writeFileSync(filePath, frontMatterNew, 'utf-8');
+    console.log(`✅ Artículo regenerado: content/posts/${slug}.md`);
+  } else {
+    // Contenido real - mantener, solo commitear
+    console.log(`✅ Contenido preservado: ${slug}.md`);
+    skipWrite = true;
+  }
+} else {
+  fs.writeFileSync(filePath, frontMatterNew, 'utf-8');
+  console.log(`✅ Artículo creado: content/posts/${slug}.md`);
+}
+
+if (!skipWrite) {
+  console.log(`   URL: https://ceroclick.es/posts/${slug}/\n`);
+}
 
 // --- 3. Commit y push ---
 console.log('📦 Commitando y pusheando...');
