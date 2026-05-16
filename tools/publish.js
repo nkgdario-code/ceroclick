@@ -89,6 +89,17 @@ run(`git commit -m "📝 Nuevo artículo: ${title}"`, REPO_DIR);
 const pushOut = run('git push', REPO_DIR);
 console.log(pushOut);
 
+// --- Generate sitemap ---
+try {
+  console.log('🔧 Generando sitemap...');
+  run('node generate-sitemap.js', REPO_DIR);
+  run('git add public/sitemap.xml', REPO_DIR);
+  run('git commit -m "🤖 Actualizar sitemap"', REPO_DIR);
+  run('git push', REPO_DIR);
+} catch(e) {
+  console.error('⚠️ Error generando sitemap', e);
+}
+
 // --- 4. Deploy a Vercel ---
 console.log('🚀 Desplegando en Vercel...\n');
 const vercelToken = process.env.VERCEL_TOKEN;
